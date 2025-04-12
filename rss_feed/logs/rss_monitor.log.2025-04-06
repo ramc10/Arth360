@@ -1,0 +1,38 @@
+2025-04-06 23:59:27|INFO|Database connection established!
+2025-04-06 23:59:27|INFO|Database tables ready!
+2025-04-06 23:59:27|INFO|RSS Feed Monitor started!
+2025-04-06 23:59:27|INFO|Current IST: 2025-04-06 23:59:27
+2025-04-06 23:59:27|INFO|Checking feeds every 5 minutes
+2025-04-06 23:59:27|INFO|
+2025-04-06 23:59:27|INFO|Starting feed check
+2025-04-06 23:59:27|INFO|Checking Mint Markets
+2025-04-06 23:59:27|INFO|Found 35 new articles in Mint Markets
+2025-04-06 23:59:27|INFO|Database connection established!
+2025-04-06 23:59:27|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:27|INFO|Checking Mint Business
+2025-04-06 23:59:28|INFO|Found 35 new articles in Mint Business
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:28|INFO|Checking Mint Industry
+2025-04-06 23:59:28|INFO|Found 35 new articles in Mint Industry
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:28|INFO|Checking Mint Money
+2025-04-06 23:59:28|INFO|Found 35 new articles in Mint Money
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:28|INFO|Checking Mint Technology
+2025-04-06 23:59:28|INFO|Found 35 new articles in Mint Technology
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:28|INFO|Checking Mint AI
+2025-04-06 23:59:28|INFO|Found 35 new articles in Mint AI
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 35 articles successfully!
+2025-04-06 23:59:28|INFO|Checking Business Today
+2025-04-06 23:59:28|INFO|Found 70 new articles in Business Today
+2025-04-06 23:59:28|INFO|Database connection established!
+2025-04-06 23:59:28|INFO|Stored 70 articles successfully!
+2025-04-06 23:59:28|INFO|Finished! Total new articles: 280
+2025-04-06 23:59:28|INFO|
+2025-04-06 23:59:28|INFO|Next check at: 00:04:28

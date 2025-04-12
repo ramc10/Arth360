@@ -1,0 +1,137 @@
+{
+    "feeds": [
+      {
+        "name": "Moneycontrol Latest",
+        "url": "https://www.moneycontrol.com/rss/latestnews.xml",
+        "source": "moneycontrol-latest",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Business",
+        "url": "https://www.moneycontrol.com/rss/business.xml",
+        "source": "moneycontrol-business",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Markets",
+        "url": "https://www.moneycontrol.com/rss/marketreports.xml",
+        "source": "moneycontrol-markets",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Personal Finance",
+        "url": "https://www.moneycontrol.com/rss/pfarticles.xml",
+        "source": "moneycontrol-pf",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol IPO News",
+        "url": "https://www.moneycontrol.com/rss/iponews.xml",
+        "source": "moneycontrol-ipo",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Commodities",
+        "url": "https://www.moneycontrol.com/rss/commodities.xml",
+        "source": "moneycontrol-commodities",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Economy",
+        "url": "https://www.moneycontrol.com/rss/economy.xml",
+        "source": "moneycontrol-economy",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Technology",
+        "url": "https://www.moneycontrol.com/rss/technology.xml",
+        "source": "moneycontrol-tech",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Mutual Funds",
+        "url": "https://www.moneycontrol.com/rss/mfnews.xml",
+        "source": "moneycontrol-mf",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol International",
+        "url": "https://www.moneycontrol.com/rss/internationalmarkets.xml",
+        "source": "moneycontrol-international",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Banking",
+        "url": "https://www.moneycontrol.com/rss/banking.xml",
+        "source": "moneycontrol-banking",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Moneycontrol Insurance",
+        "url": "https://www.moneycontrol.com/rss/insurance.xml",
+        "source": "moneycontrol-insurance",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint Markets",
+        "url": "https://www.livemint.com/rss/markets",
+        "source": "mint-markets",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint Business",
+        "url": "https://www.livemint.com/rss/companies",
+        "source": "mint-business",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint Industry",
+        "url": "https://www.livemint.com/rss/industry",
+        "source": "mint-industry",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint Money",
+        "url": "https://www.livemint.com/rss/money",
+        "source": "mint-money",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint Technology",
+        "url": "https://www.livemint.com/rss/technology",
+        "source": "mint-technology",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Mint AI",
+        "url": "https://www.livemint.com/rss/AI",
+        "source": "mint-ai",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Business Today",
+        "url": "https://www.businesstoday.in/rssfeeds/?id=home",
+        "source": "business-today",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      }
+    ]
+  }

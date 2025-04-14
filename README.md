@@ -1,5 +1,7 @@
 # Arth360.Live
 
+[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+
 This project consists of three main services that work together to fetch, process, and publish RSS feed content:
 
 1. `feeder.py` - Fetches RSS feeds and stores them in the database

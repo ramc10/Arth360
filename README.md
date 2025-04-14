@@ -1,111 +1,129 @@
 # Arth360.Live
 
 [![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+A news aggregation system that collects, processes, and publishes news articles to a Telegram channel.
 
-This project consists of three main services that work together to fetch, process, and publish RSS feed content:
+## Architecture
 
-1. `feeder.py` - Fetches RSS feeds and stores them in the database
-2. `content.py` - Extracts content from the stored URLs
-3. `telegram_publisher.py` - Publishes content to a Telegram channel
+The system consists of several microservices:
 
-## Prerequisites
+1. **Feeder Service**: Collects news articles from various RSS feeds
+2. **Content Service**: Processes and extracts content from collected articles
+3. **Publisher Service**: Publishes processed articles to a Telegram channel
+4. **Stocks Service**: Adhoc service for stock market data (runs on demand)
 
-- Python 3.11 or higher
-- MySQL database
-- Telegram bot token and channel ID
+## Database Structure
+
+### Tables
+
+1. **feed_metadata**
+   - `id`: Primary key
+   - `title`: Article title
+   - `description`: Article description
+   - `url`: Article URL
+   - `published_at`: Publication date
+   - `source`: News source
+   - `created_at`: Record creation timestamp
+
+2. **article_content**
+   - `id`: Primary key
+   - `url_id`: Foreign key to feed_metadata
+   - `full_text`: Complete article text
+   - `cleaned_text`: Cleaned version of text
+   - `authors`: Article authors (JSON)
+   - `top_image`: Main article image URL
+   - `images`: Article images (JSON)
+   - `keywords`: Article keywords (JSON)
+   - `summary`: Article summary
+   - `created_at`: Record creation timestamp
+
+3. **telegram_published**
+   - `id`: Primary key
+   - `article_id`: Foreign key to feed_metadata
+   - `published_at`: Publication timestamp
 
 ## Setup
 
-1. Install required Python packages:
+1. Clone the repository
+2. Create a `.env` file with the following variables:
+   ```
+   DB_HOST=mysql
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=rss_reader
+   TELEGRAM_BOT_TOKEN=your_bot_token
+   TELEGRAM_CHANNEL_ID=your_channel_id
+   ```
+
+3. Build and start the services:
    ```bash
-   pip install -r requirements.txt
+   # Build the base image
+   docker build -t arth360-base:latest -f Dockerfile.base .
+
+   # Start the main services
+   docker-compose up -d
    ```
 
-2. Create a `.env` file in the project root with the following variables:
-   ```
-   DB_HOST=your_database_host
-   DB_USER=your_database_user
-   DB_PASSWORD=your_database_password
-   DB_NAME=your_database_name
-   TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-   TELEGRAM_CHANNEL_ID=your_telegram_channel_id
+4. To run the stocks service adhoc:
+   ```bash
+   # Make the script executable
+   chmod +x run_stocks.sh
+
+   # Run the stocks service
+   ./run_stocks.sh
    ```
 
-3. Set up the MySQL database and create the required tables by running each service once.
-
-## Running the Services
+## Services
 
 ### Feeder Service
-The feeder service continuously monitors RSS feeds and stores new articles in the database:
-```bash
-python feeder.py
-```
+- Collects news articles from configured RSS feeds
+- Stores basic article metadata in `feed_metadata` table
+- Runs continuously, checking for new articles
 
 ### Content Service
-The content service processes stored URLs to extract article content:
-```bash
-python content.py
-```
+- Processes articles from `feed_metadata`
+- Extracts full content, images, and metadata
+- Stores processed content in `article_content` table
+- Runs continuously, processing unprocessed articles
 
-### Telegram Publisher
-The publisher service sends processed content to a Telegram channel:
-```bash
-python telegram_publisher.py
-```
-
-## Service Details
-
-### Feeder Service (`feeder.py`)
-- Fetches RSS feeds from configured sources
-- Stores article metadata in the database
-- Runs continuously with configurable check intervals
-- Handles feed parsing and error logging
-
-### Content Service (`content.py`)
-- Extracts full article content from stored URLs
-- Processes and cleans article text
-- Stores extracted content in the database
-- Handles image extraction and storage
-
-### Telegram Publisher (`telegram_publisher.py`)
+### Publisher Service
 - Publishes processed articles to Telegram
-- Formats content for Telegram messages
-- Handles rate limiting and error recovery
-- Tracks published articles to avoid duplicates
+- Marks published articles in `telegram_published` table
+- Runs continuously, checking for new content to publish
 
-## Database Schema
-
-The services use the following main tables:
-- `feed_metadata`: Stores RSS feed entries
-- `article_content`: Stores extracted article content
-- `telegram_published`: Tracks published articles
-
-## Logging
-
-All services write logs to the `logs` directory with daily rotation. Logs include:
-- Service status updates
-- Error messages
-- Processing statistics
-
-## Error Handling
-
-Each service includes:
-- Automatic retry mechanisms
-- Error logging
-- Graceful failure handling
-- Database transaction management
-
-## Configuration
-
-Key configuration options can be modified in each service:
-- Check intervals
-- Batch sizes
-- Processing limits
-- Logging levels
+### Stocks Service
+- Runs on demand using `run_stocks.sh`
+- Processes stock market data
+- Connects to the same database as other services
 
 ## Monitoring
 
-Monitor service status through:
-- Log files in the `logs` directory
-- Database records
-- Telegram channel output 
+Check service logs:
+```bash
+# View all logs
+docker-compose logs -f
+
+# View specific service logs
+docker-compose logs -f feeder
+docker-compose logs -f content
+docker-compose logs -f publisher
+```
+
+## Database Access
+
+Connect to MySQL:
+```bash
+docker exec -it arth360-mysql mysql -u root -p
+```
+
+## Troubleshooting
+
+If you encounter issues:
+1. Check service logs for errors
+2. Verify database tables exist and have correct structure
+3. Ensure environment variables are set correctly
+4. Try rebuilding containers if changes were made:
+   ```bash
+   docker-compose build <service_name>
+   docker-compose up -d <service_name>
+   ```

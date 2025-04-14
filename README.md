@@ -1,6 +1,7 @@
 # Arth360.Live
 
 [![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+
 A news aggregation system that collects, processes, and publishes news articles to a Telegram channel.
 
 ## Architecture

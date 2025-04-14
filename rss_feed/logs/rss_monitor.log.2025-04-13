@@ -1,0 +1,2134 @@
+2025-04-13 02:07:20|INFO|
+2025-04-13 02:07:20|INFO|Starting feed check
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Latest
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Business
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Markets
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol IPO News
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Commodities
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Economy
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Technology
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol International
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Banking
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 02:07:20|INFO|Checking Moneycontrol Insurance
+2025-04-13 02:07:20|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 02:07:20|INFO|Checking Mint Markets
+2025-04-13 02:07:21|INFO|Found 2 new articles in Mint Markets
+2025-04-13 02:07:21|INFO|Database connection established!
+2025-04-13 02:07:21|INFO|Stored 2 articles successfully!
+2025-04-13 02:07:21|INFO|Checking Mint Business
+2025-04-13 02:07:21|INFO|Found 0 new articles in Mint Business
+2025-04-13 02:07:21|INFO|Checking Mint Industry
+2025-04-13 02:07:21|INFO|Found 1 new articles in Mint Industry
+2025-04-13 02:07:21|INFO|Database connection established!
+2025-04-13 02:07:21|INFO|Stored 1 articles successfully!
+2025-04-13 02:07:21|INFO|Checking Mint Money
+2025-04-13 02:07:21|INFO|Found 0 new articles in Mint Money
+2025-04-13 02:07:21|INFO|Checking Mint Technology
+2025-04-13 02:07:21|INFO|Found 0 new articles in Mint Technology
+2025-04-13 02:07:21|INFO|Checking Mint AI
+2025-04-13 02:07:21|INFO|Found 0 new articles in Mint AI
+2025-04-13 02:07:21|INFO|Checking Business Today
+2025-04-13 02:07:22|INFO|Found 0 new articles in Business Today
+2025-04-13 02:07:22|INFO|Finished! Total new articles: 3
+2025-04-13 02:07:22|INFO|
+2025-04-13 02:07:22|INFO|Next check at: 02:12:22
+2025-04-13 03:07:51|INFO|
+2025-04-13 03:07:51|INFO|Starting feed check
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Latest
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Business
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Markets
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Economy
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Technology
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol International
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Banking
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:07:51|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:07:51|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:07:51|INFO|Checking Mint Markets
+2025-04-13 03:07:51|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:07:51|INFO|Checking Mint Business
+2025-04-13 03:07:51|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:07:51|INFO|Checking Mint Industry
+2025-04-13 03:07:52|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:07:52|INFO|Checking Mint Money
+2025-04-13 03:07:52|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:07:52|INFO|Checking Mint Technology
+2025-04-13 03:07:52|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:07:52|INFO|Checking Mint AI
+2025-04-13 03:07:52|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:07:52|INFO|Checking Business Today
+2025-04-13 03:07:52|INFO|Found 0 new articles in Business Today
+2025-04-13 03:07:52|INFO|Finished! Total new articles: 0
+2025-04-13 03:07:52|INFO|
+2025-04-13 03:07:52|INFO|Next check at: 03:12:52
+2025-04-13 03:12:52|INFO|
+2025-04-13 03:12:52|INFO|Starting feed check
+2025-04-13 03:12:52|INFO|Checking Moneycontrol Latest
+2025-04-13 03:12:53|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:12:53|INFO|Checking Moneycontrol Business
+2025-04-13 03:12:53|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:12:53|INFO|Checking Moneycontrol Markets
+2025-04-13 03:12:54|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:12:54|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:12:54|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:12:54|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:12:55|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:12:55|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:12:55|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:12:55|INFO|Checking Moneycontrol Economy
+2025-04-13 03:12:56|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:12:56|INFO|Checking Moneycontrol Technology
+2025-04-13 03:12:56|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:12:56|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:12:57|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:12:57|INFO|Checking Moneycontrol International
+2025-04-13 03:12:57|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:12:57|INFO|Checking Moneycontrol Banking
+2025-04-13 03:12:57|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:12:57|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:12:58|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:12:58|INFO|Checking Mint Markets
+2025-04-13 03:13:00|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:13:00|INFO|Checking Mint Business
+2025-04-13 03:13:01|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:13:01|INFO|Checking Mint Industry
+2025-04-13 03:13:02|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:13:02|INFO|Checking Mint Money
+2025-04-13 03:13:03|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:13:03|INFO|Checking Mint Technology
+2025-04-13 03:13:05|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:13:05|INFO|Checking Mint AI
+2025-04-13 03:13:06|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:13:06|INFO|Checking Business Today
+2025-04-13 03:13:07|INFO|Found 0 new articles in Business Today
+2025-04-13 03:13:07|INFO|Finished! Total new articles: 0
+2025-04-13 03:13:07|INFO|
+2025-04-13 03:13:07|INFO|Next check at: 03:18:07
+2025-04-13 03:18:07|INFO|
+2025-04-13 03:18:07|INFO|Starting feed check
+2025-04-13 03:18:07|INFO|Checking Moneycontrol Latest
+2025-04-13 03:18:07|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:18:07|INFO|Checking Moneycontrol Business
+2025-04-13 03:18:07|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:18:07|INFO|Checking Moneycontrol Markets
+2025-04-13 03:18:07|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:18:07|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Economy
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Technology
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol International
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Banking
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:18:08|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:18:08|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:18:08|INFO|Checking Mint Markets
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:18:08|INFO|Checking Mint Business
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:18:08|INFO|Checking Mint Industry
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:18:08|INFO|Checking Mint Money
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:18:08|INFO|Checking Mint Technology
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:18:08|INFO|Checking Mint AI
+2025-04-13 03:18:08|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:18:08|INFO|Checking Business Today
+2025-04-13 03:18:08|INFO|Found 0 new articles in Business Today
+2025-04-13 03:18:08|INFO|Finished! Total new articles: 0
+2025-04-13 03:18:08|INFO|
+2025-04-13 03:18:08|INFO|Next check at: 03:23:08
+2025-04-13 03:23:08|INFO|
+2025-04-13 03:23:08|INFO|Starting feed check
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Latest
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Business
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Markets
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:23:08|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:23:08|INFO|Checking Moneycontrol Economy
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:23:09|INFO|Checking Moneycontrol Technology
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:23:09|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:23:09|INFO|Checking Moneycontrol International
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:23:09|INFO|Checking Moneycontrol Banking
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:23:09|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:23:09|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:23:09|INFO|Checking Mint Markets
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:23:09|INFO|Checking Mint Business
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:23:09|INFO|Checking Mint Industry
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:23:09|INFO|Checking Mint Money
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:23:09|INFO|Checking Mint Technology
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:23:09|INFO|Checking Mint AI
+2025-04-13 03:23:09|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:23:09|INFO|Checking Business Today
+2025-04-13 03:23:10|INFO|Found 0 new articles in Business Today
+2025-04-13 03:23:10|INFO|Finished! Total new articles: 0
+2025-04-13 03:23:10|INFO|
+2025-04-13 03:23:10|INFO|Next check at: 03:28:10
+2025-04-13 03:28:10|INFO|
+2025-04-13 03:28:10|INFO|Starting feed check
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Latest
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Business
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Markets
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Economy
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Technology
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol International
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Banking
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:28:10|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:28:10|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:28:10|INFO|Checking Mint Markets
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:28:10|INFO|Checking Mint Business
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:28:10|INFO|Checking Mint Industry
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:28:10|INFO|Checking Mint Money
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:28:10|INFO|Checking Mint Technology
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:28:10|INFO|Checking Mint AI
+2025-04-13 03:28:10|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:28:10|INFO|Checking Business Today
+2025-04-13 03:28:11|INFO|Found 0 new articles in Business Today
+2025-04-13 03:28:11|INFO|Finished! Total new articles: 0
+2025-04-13 03:28:11|INFO|
+2025-04-13 03:28:11|INFO|Next check at: 03:33:11
+2025-04-13 03:33:11|INFO|
+2025-04-13 03:33:11|INFO|Starting feed check
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Latest
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Business
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Markets
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Economy
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Technology
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol International
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Banking
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:33:11|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:33:11|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:33:11|INFO|Checking Mint Markets
+2025-04-13 03:33:11|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:33:11|INFO|Checking Mint Business
+2025-04-13 03:33:11|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:33:11|INFO|Checking Mint Industry
+2025-04-13 03:33:12|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:33:12|INFO|Checking Mint Money
+2025-04-13 03:33:12|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:33:12|INFO|Checking Mint Technology
+2025-04-13 03:33:12|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:33:12|INFO|Checking Mint AI
+2025-04-13 03:33:12|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:33:12|INFO|Checking Business Today
+2025-04-13 03:33:12|INFO|Found 0 new articles in Business Today
+2025-04-13 03:33:12|INFO|Finished! Total new articles: 0
+2025-04-13 03:33:12|INFO|
+2025-04-13 03:33:12|INFO|Next check at: 03:38:12
+2025-04-13 03:38:12|INFO|
+2025-04-13 03:38:12|INFO|Starting feed check
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Latest
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Business
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Markets
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Economy
+2025-04-13 03:38:12|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:38:12|INFO|Checking Moneycontrol Technology
+2025-04-13 03:38:13|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:38:13|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:38:13|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:38:13|INFO|Checking Moneycontrol International
+2025-04-13 03:38:13|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:38:13|INFO|Checking Moneycontrol Banking
+2025-04-13 03:38:13|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:38:13|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:38:13|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:38:13|INFO|Checking Mint Markets
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:38:13|INFO|Checking Mint Business
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:38:13|INFO|Checking Mint Industry
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:38:13|INFO|Checking Mint Money
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:38:13|INFO|Checking Mint Technology
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:38:13|INFO|Checking Mint AI
+2025-04-13 03:38:13|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:38:13|INFO|Checking Business Today
+2025-04-13 03:38:14|INFO|Found 0 new articles in Business Today
+2025-04-13 03:38:14|INFO|Finished! Total new articles: 0
+2025-04-13 03:38:14|INFO|
+2025-04-13 03:38:14|INFO|Next check at: 03:43:14
+2025-04-13 03:43:14|INFO|
+2025-04-13 03:43:14|INFO|Starting feed check
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Latest
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Business
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Markets
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Economy
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Technology
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol International
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Banking
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:43:14|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:43:14|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:43:14|INFO|Checking Mint Markets
+2025-04-13 03:43:14|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:43:14|INFO|Checking Mint Business
+2025-04-13 03:43:14|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:43:14|INFO|Checking Mint Industry
+2025-04-13 03:43:14|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:43:14|INFO|Checking Mint Money
+2025-04-13 03:43:15|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:43:15|INFO|Checking Mint Technology
+2025-04-13 03:43:15|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:43:15|INFO|Checking Mint AI
+2025-04-13 03:43:15|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:43:15|INFO|Checking Business Today
+2025-04-13 03:43:16|INFO|Found 0 new articles in Business Today
+2025-04-13 03:43:16|INFO|Finished! Total new articles: 0
+2025-04-13 03:43:16|INFO|
+2025-04-13 03:43:16|INFO|Next check at: 03:48:16
+2025-04-13 03:48:16|INFO|
+2025-04-13 03:48:16|INFO|Starting feed check
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Latest
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Business
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Markets
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Economy
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Technology
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol International
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Banking
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:48:16|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:48:16|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:48:16|INFO|Checking Mint Markets
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:48:17|INFO|Checking Mint Business
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:48:17|INFO|Checking Mint Industry
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:48:17|INFO|Checking Mint Money
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:48:17|INFO|Checking Mint Technology
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:48:17|INFO|Checking Mint AI
+2025-04-13 03:48:17|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:48:17|INFO|Checking Business Today
+2025-04-13 03:48:18|INFO|Found 0 new articles in Business Today
+2025-04-13 03:48:18|INFO|Finished! Total new articles: 0
+2025-04-13 03:48:18|INFO|
+2025-04-13 03:48:18|INFO|Next check at: 03:53:18
+2025-04-13 03:53:18|INFO|
+2025-04-13 03:53:18|INFO|Starting feed check
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Latest
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Business
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Markets
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Economy
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Technology
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol International
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Banking
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:53:18|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:53:18|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:53:18|INFO|Checking Mint Markets
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:53:18|INFO|Checking Mint Business
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:53:18|INFO|Checking Mint Industry
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:53:18|INFO|Checking Mint Money
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:53:18|INFO|Checking Mint Technology
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:53:18|INFO|Checking Mint AI
+2025-04-13 03:53:18|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:53:18|INFO|Checking Business Today
+2025-04-13 03:53:19|INFO|Found 0 new articles in Business Today
+2025-04-13 03:53:19|INFO|Finished! Total new articles: 0
+2025-04-13 03:53:19|INFO|
+2025-04-13 03:53:19|INFO|Next check at: 03:58:19
+2025-04-13 03:58:19|INFO|
+2025-04-13 03:58:19|INFO|Starting feed check
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Latest
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Business
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Markets
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol IPO News
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Commodities
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Economy
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Technology
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol International
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Banking
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 03:58:19|INFO|Checking Moneycontrol Insurance
+2025-04-13 03:58:19|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 03:58:19|INFO|Checking Mint Markets
+2025-04-13 03:58:19|INFO|Found 0 new articles in Mint Markets
+2025-04-13 03:58:19|INFO|Checking Mint Business
+2025-04-13 03:58:19|INFO|Found 0 new articles in Mint Business
+2025-04-13 03:58:19|INFO|Checking Mint Industry
+2025-04-13 03:58:19|INFO|Found 0 new articles in Mint Industry
+2025-04-13 03:58:19|INFO|Checking Mint Money
+2025-04-13 03:58:19|INFO|Found 0 new articles in Mint Money
+2025-04-13 03:58:19|INFO|Checking Mint Technology
+2025-04-13 03:58:20|INFO|Found 0 new articles in Mint Technology
+2025-04-13 03:58:20|INFO|Checking Mint AI
+2025-04-13 03:58:20|INFO|Found 0 new articles in Mint AI
+2025-04-13 03:58:20|INFO|Checking Business Today
+2025-04-13 03:58:20|INFO|Found 0 new articles in Business Today
+2025-04-13 03:58:20|INFO|Finished! Total new articles: 0
+2025-04-13 03:58:20|INFO|
+2025-04-13 03:58:20|INFO|Next check at: 04:03:20
+2025-04-13 04:03:20|INFO|
+2025-04-13 04:03:20|INFO|Starting feed check
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Latest
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Business
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Markets
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol IPO News
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Commodities
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Economy
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Technology
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol International
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Banking
+2025-04-13 04:03:20|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 04:03:20|INFO|Checking Moneycontrol Insurance
+2025-04-13 04:03:21|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 04:03:21|INFO|Checking Mint Markets
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint Markets
+2025-04-13 04:03:21|INFO|Checking Mint Business
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint Business
+2025-04-13 04:03:21|INFO|Checking Mint Industry
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint Industry
+2025-04-13 04:03:21|INFO|Checking Mint Money
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint Money
+2025-04-13 04:03:21|INFO|Checking Mint Technology
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint Technology
+2025-04-13 04:03:21|INFO|Checking Mint AI
+2025-04-13 04:03:21|INFO|Found 0 new articles in Mint AI
+2025-04-13 04:03:21|INFO|Checking Business Today
+2025-04-13 04:03:21|INFO|Found 0 new articles in Business Today
+2025-04-13 04:03:21|INFO|Finished! Total new articles: 0
+2025-04-13 04:03:21|INFO|
+2025-04-13 04:03:21|INFO|Next check at: 04:08:21
+2025-04-13 04:08:21|INFO|
+2025-04-13 04:08:21|INFO|Starting feed check
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Latest
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Business
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Markets
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol IPO News
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Commodities
+2025-04-13 04:08:21|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 04:08:21|INFO|Checking Moneycontrol Economy
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 04:08:22|INFO|Checking Moneycontrol Technology
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 04:08:22|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 04:08:22|INFO|Checking Moneycontrol International
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 04:08:22|INFO|Checking Moneycontrol Banking
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 04:08:22|INFO|Checking Moneycontrol Insurance
+2025-04-13 04:08:22|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 04:08:22|INFO|Checking Mint Markets
+2025-04-13 04:08:22|INFO|Found 0 new articles in Mint Markets
+2025-04-13 04:08:22|INFO|Checking Mint Business
+2025-04-13 04:08:22|INFO|Found 0 new articles in Mint Business
+2025-04-13 04:08:22|INFO|Checking Mint Industry
+2025-04-13 04:08:22|INFO|Found 0 new articles in Mint Industry
+2025-04-13 04:08:22|INFO|Checking Mint Money
+2025-04-13 04:08:22|INFO|Found 0 new articles in Mint Money
+2025-04-13 04:08:22|INFO|Checking Mint Technology
+2025-04-13 04:08:22|INFO|Found 0 new articles in Mint Technology
+2025-04-13 04:08:22|INFO|Checking Mint AI
+2025-04-13 04:08:23|INFO|Found 0 new articles in Mint AI
+2025-04-13 04:08:23|INFO|Checking Business Today
+2025-04-13 04:08:23|INFO|Found 0 new articles in Business Today
+2025-04-13 04:08:23|INFO|Finished! Total new articles: 0
+2025-04-13 04:08:23|INFO|
+2025-04-13 04:08:23|INFO|Next check at: 04:13:23
+2025-04-13 05:03:05|INFO|
+2025-04-13 05:03:05|INFO|Starting feed check
+2025-04-13 05:03:05|INFO|Checking Moneycontrol Latest
+2025-04-13 05:03:05|INFO|Failed to parse Moneycontrol Latest: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/latestnews.xml
+2025-04-13 05:03:05|INFO|Checking Moneycontrol Business
+2025-04-13 05:03:05|INFO|Failed to parse Moneycontrol Business: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 05:03:05|INFO|Checking Moneycontrol Markets
+2025-04-13 05:03:05|INFO|Failed to parse Moneycontrol Markets: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/marketreports.xml
+2025-04-13 05:03:05|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 05:03:05|INFO|Failed to parse Moneycontrol Personal Finance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 05:03:05|INFO|Checking Moneycontrol IPO News
+2025-04-13 05:03:05|INFO|Failed to parse Moneycontrol IPO News: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/iponews.xml
+2025-04-13 05:03:05|INFO|Checking Moneycontrol Commodities
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Commodities: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol Economy
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Economy: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/economy.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol Technology
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Technology: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Mutual Funds: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol International
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol International: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/internationalmarkets.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol Banking
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Banking: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 05:03:06|INFO|Checking Moneycontrol Insurance
+2025-04-13 05:03:06|INFO|Failed to parse Moneycontrol Insurance: 403 Client Error: Forbidden for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 05:03:06|INFO|Checking Mint Markets
+2025-04-13 05:03:06|INFO|Found 0 new articles in Mint Markets
+2025-04-13 05:03:06|INFO|Checking Mint Business
+2025-04-13 05:03:07|INFO|Found 0 new articles in Mint Business
+2025-04-13 05:03:07|INFO|Checking Mint Industry
+2025-04-13 05:03:07|INFO|Found 0 new articles in Mint Industry
+2025-04-13 05:03:07|INFO|Checking Mint Money
+2025-04-13 05:03:07|INFO|Found 0 new articles in Mint Money
+2025-04-13 05:03:07|INFO|Checking Mint Technology
+2025-04-13 05:03:07|INFO|Found 0 new articles in Mint Technology
+2025-04-13 05:03:07|INFO|Checking Mint AI
+2025-04-13 05:03:07|INFO|Found 0 new articles in Mint AI
+2025-04-13 05:03:08|INFO|Checking Business Today
+2025-04-13 05:03:08|INFO|Found 0 new articles in Business Today
+2025-04-13 05:03:08|INFO|Finished! Total new articles: 0
+2025-04-13 05:03:08|INFO|
+2025-04-13 05:03:08|INFO|Next check at: 05:08:08
+2025-04-13 07:10:38|INFO|
+2025-04-13 07:10:38|INFO|Starting feed check
+2025-04-13 07:10:38|INFO|Checking Moneycontrol Latest
+2025-04-13 07:10:38|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 07:10:38|INFO|Checking Moneycontrol Business
+2025-04-13 07:10:39|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 07:10:39|INFO|Checking Moneycontrol Markets
+2025-04-13 07:10:39|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 07:10:39|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 07:10:39|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 07:10:39|INFO|Checking Moneycontrol IPO News
+2025-04-13 07:10:39|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 07:10:39|INFO|Checking Moneycontrol Commodities
+2025-04-13 07:10:40|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 07:10:40|INFO|Checking Moneycontrol Economy
+2025-04-13 07:10:40|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 07:10:40|INFO|Checking Moneycontrol Technology
+2025-04-13 07:10:40|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 07:10:40|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 07:10:40|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 07:10:40|INFO|Checking Moneycontrol International
+2025-04-13 07:10:40|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 07:10:40|INFO|Checking Moneycontrol Banking
+2025-04-13 07:10:41|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 07:10:41|INFO|Checking Moneycontrol Insurance
+2025-04-13 07:10:41|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 07:10:41|INFO|Checking Mint Markets
+2025-04-13 07:10:41|INFO|Found 2 new articles in Mint Markets
+2025-04-13 07:10:41|INFO|Database connection established!
+2025-04-13 07:10:41|INFO|Stored 2 articles successfully!
+2025-04-13 07:10:41|INFO|Checking Mint Business
+2025-04-13 07:10:41|INFO|Found 0 new articles in Mint Business
+2025-04-13 07:10:41|INFO|Checking Mint Industry
+2025-04-13 07:10:41|INFO|Found 0 new articles in Mint Industry
+2025-04-13 07:10:41|INFO|Checking Mint Money
+2025-04-13 07:10:42|INFO|Found 0 new articles in Mint Money
+2025-04-13 07:10:42|INFO|Checking Mint Technology
+2025-04-13 07:10:42|INFO|Found 0 new articles in Mint Technology
+2025-04-13 07:10:42|INFO|Checking Mint AI
+2025-04-13 07:10:42|INFO|Found 0 new articles in Mint AI
+2025-04-13 07:10:42|INFO|Checking Business Today
+2025-04-13 07:10:42|INFO|Found 0 new articles in Business Today
+2025-04-13 07:10:42|INFO|Finished! Total new articles: 2
+2025-04-13 07:10:42|INFO|
+2025-04-13 07:10:42|INFO|Next check at: 07:15:42
+2025-04-13 09:04:00|INFO|
+2025-04-13 09:04:00|INFO|Starting feed check
+2025-04-13 09:04:00|INFO|Checking Moneycontrol Latest
+2025-04-13 09:04:00|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 09:04:00|INFO|Checking Moneycontrol Business
+2025-04-13 09:04:01|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 09:04:01|INFO|Checking Moneycontrol Markets
+2025-04-13 09:04:01|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 09:04:01|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 09:04:01|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 09:04:01|INFO|Checking Moneycontrol IPO News
+2025-04-13 09:04:01|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 09:04:01|INFO|Checking Moneycontrol Commodities
+2025-04-13 09:04:02|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 09:04:02|INFO|Checking Moneycontrol Economy
+2025-04-13 09:04:02|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 09:04:02|INFO|Checking Moneycontrol Technology
+2025-04-13 09:04:02|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 09:04:02|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 09:04:03|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 09:04:03|INFO|Checking Moneycontrol International
+2025-04-13 09:04:03|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 09:04:03|INFO|Checking Moneycontrol Banking
+2025-04-13 09:04:03|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 09:04:03|INFO|Checking Moneycontrol Insurance
+2025-04-13 09:04:04|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 09:04:04|INFO|Checking Mint Markets
+2025-04-13 09:04:04|INFO|Found 0 new articles in Mint Markets
+2025-04-13 09:04:04|INFO|Checking Mint Business
+2025-04-13 09:04:04|INFO|Found 1 new articles in Mint Business
+2025-04-13 09:04:04|INFO|Database connection established!
+2025-04-13 09:04:04|INFO|Stored 1 articles successfully!
+2025-04-13 09:04:04|INFO|Checking Mint Industry
+2025-04-13 09:04:04|INFO|Found 0 new articles in Mint Industry
+2025-04-13 09:04:04|INFO|Checking Mint Money
+2025-04-13 09:04:04|INFO|Found 0 new articles in Mint Money
+2025-04-13 09:04:04|INFO|Checking Mint Technology
+2025-04-13 09:04:04|INFO|Found 1 new articles in Mint Technology
+2025-04-13 09:04:04|INFO|Database connection established!
+2025-04-13 09:04:04|INFO|Stored 1 articles successfully!
+2025-04-13 09:04:04|INFO|Checking Mint AI
+2025-04-13 09:04:04|INFO|Found 0 new articles in Mint AI
+2025-04-13 09:04:04|INFO|Checking Business Today
+2025-04-13 09:04:04|INFO|Found 1 new articles in Business Today
+2025-04-13 09:04:04|INFO|Database connection established!
+2025-04-13 09:04:04|INFO|Stored 1 articles successfully!
+2025-04-13 09:04:04|INFO|Finished! Total new articles: 3
+2025-04-13 09:04:04|INFO|
+2025-04-13 09:04:04|INFO|Next check at: 09:09:04
+2025-04-13 10:31:20|INFO|
+2025-04-13 10:31:20|INFO|Starting feed check
+2025-04-13 10:31:20|INFO|Checking Moneycontrol Latest
+2025-04-13 10:31:20|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 10:31:20|INFO|Checking Moneycontrol Business
+2025-04-13 10:31:20|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 10:31:20|INFO|Checking Moneycontrol Markets
+2025-04-13 10:31:21|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 10:31:21|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 10:31:21|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 10:31:21|INFO|Checking Moneycontrol IPO News
+2025-04-13 10:31:21|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 10:31:21|INFO|Checking Moneycontrol Commodities
+2025-04-13 10:31:22|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 10:31:22|INFO|Checking Moneycontrol Economy
+2025-04-13 10:31:22|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 10:31:22|INFO|Checking Moneycontrol Technology
+2025-04-13 10:31:22|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 10:31:22|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 10:31:23|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 10:31:23|INFO|Checking Moneycontrol International
+2025-04-13 10:31:23|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 10:31:23|INFO|Checking Moneycontrol Banking
+2025-04-13 10:31:23|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 10:31:23|INFO|Checking Moneycontrol Insurance
+2025-04-13 10:31:23|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 10:31:23|INFO|Checking Mint Markets
+2025-04-13 10:31:23|INFO|Found 2 new articles in Mint Markets
+2025-04-13 10:31:24|INFO|Database connection established!
+2025-04-13 10:31:24|INFO|Stored 2 articles successfully!
+2025-04-13 10:31:24|INFO|Checking Mint Business
+2025-04-13 10:31:24|INFO|Found 1 new articles in Mint Business
+2025-04-13 10:31:24|INFO|Database connection established!
+2025-04-13 10:31:24|INFO|Stored 1 articles successfully!
+2025-04-13 10:31:24|INFO|Checking Mint Industry
+2025-04-13 10:31:24|INFO|Found 0 new articles in Mint Industry
+2025-04-13 10:31:24|INFO|Checking Mint Money
+2025-04-13 10:31:24|INFO|Found 0 new articles in Mint Money
+2025-04-13 10:31:24|INFO|Checking Mint Technology
+2025-04-13 10:31:24|INFO|Found 1 new articles in Mint Technology
+2025-04-13 10:31:24|INFO|Database connection established!
+2025-04-13 10:31:24|INFO|Stored 1 articles successfully!
+2025-04-13 10:31:24|INFO|Checking Mint AI
+2025-04-13 10:31:24|INFO|Found 0 new articles in Mint AI
+2025-04-13 10:31:24|INFO|Checking Business Today
+2025-04-13 10:31:56|INFO|Found 5 new articles in Business Today
+2025-04-13 10:31:56|INFO|Database connection established!
+2025-04-13 10:31:57|INFO|Stored 5 articles successfully!
+2025-04-13 10:31:57|INFO|Finished! Total new articles: 9
+2025-04-13 10:31:57|INFO|
+2025-04-13 10:31:57|INFO|Next check at: 10:36:57
+2025-04-13 11:24:47|INFO|
+2025-04-13 11:24:47|INFO|Starting feed check
+2025-04-13 11:24:47|INFO|Checking Moneycontrol Latest
+2025-04-13 11:24:48|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:24:48|INFO|Checking Moneycontrol Business
+2025-04-13 11:24:48|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 11:24:48|INFO|Checking Moneycontrol Markets
+2025-04-13 11:24:48|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:24:48|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:24:48|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:24:48|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:24:49|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:24:49|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:24:49|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:24:49|INFO|Checking Moneycontrol Economy
+2025-04-13 11:24:49|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:24:49|INFO|Checking Moneycontrol Technology
+2025-04-13 11:24:50|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:24:50|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:24:50|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:24:50|INFO|Checking Moneycontrol International
+2025-04-13 11:24:50|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:24:50|INFO|Checking Moneycontrol Banking
+2025-04-13 11:24:51|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:24:51|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:24:51|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:24:51|INFO|Checking Mint Markets
+2025-04-13 11:24:51|INFO|Found 2 new articles in Mint Markets
+2025-04-13 11:24:51|INFO|Database connection established!
+2025-04-13 11:24:51|INFO|Stored 2 articles successfully!
+2025-04-13 11:24:51|INFO|Checking Mint Business
+2025-04-13 11:24:51|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:24:51|INFO|Checking Mint Industry
+2025-04-13 11:24:52|INFO|Found 1 new articles in Mint Industry
+2025-04-13 11:24:52|INFO|Database connection established!
+2025-04-13 11:24:52|INFO|Stored 1 articles successfully!
+2025-04-13 11:24:52|INFO|Checking Mint Money
+2025-04-13 11:24:52|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:24:52|INFO|Checking Mint Technology
+2025-04-13 11:24:52|INFO|Found 1 new articles in Mint Technology
+2025-04-13 11:24:52|INFO|Database connection established!
+2025-04-13 11:24:52|INFO|Stored 1 articles successfully!
+2025-04-13 11:24:52|INFO|Checking Mint AI
+2025-04-13 11:24:52|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:24:52|INFO|Checking Business Today
+2025-04-13 11:24:52|INFO|Found 2 new articles in Business Today
+2025-04-13 11:24:52|INFO|Database connection established!
+2025-04-13 11:24:52|INFO|Stored 2 articles successfully!
+2025-04-13 11:24:52|INFO|Finished! Total new articles: 6
+2025-04-13 11:24:52|INFO|
+2025-04-13 11:24:52|INFO|Next check at: 11:29:52
+2025-04-13 11:29:52|INFO|
+2025-04-13 11:29:52|INFO|Starting feed check
+2025-04-13 11:29:52|INFO|Checking Moneycontrol Latest
+2025-04-13 11:29:52|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:29:52|INFO|Checking Moneycontrol Business
+2025-04-13 11:29:52|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 11:29:52|INFO|Checking Moneycontrol Markets
+2025-04-13 11:29:53|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:29:53|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:29:53|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:29:53|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:29:53|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:29:53|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:29:54|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:29:54|INFO|Checking Moneycontrol Economy
+2025-04-13 11:29:54|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:29:54|INFO|Checking Moneycontrol Technology
+2025-04-13 11:29:54|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:29:54|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:29:55|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:29:55|INFO|Checking Moneycontrol International
+2025-04-13 11:29:55|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:29:55|INFO|Checking Moneycontrol Banking
+2025-04-13 11:29:55|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:29:55|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:29:56|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:29:56|INFO|Checking Mint Markets
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:29:56|INFO|Checking Mint Business
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:29:56|INFO|Checking Mint Industry
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:29:56|INFO|Checking Mint Money
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:29:56|INFO|Checking Mint Technology
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:29:56|INFO|Checking Mint AI
+2025-04-13 11:29:56|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:29:56|INFO|Checking Business Today
+2025-04-13 11:29:57|INFO|Found 0 new articles in Business Today
+2025-04-13 11:29:57|INFO|Finished! Total new articles: 0
+2025-04-13 11:29:57|INFO|
+2025-04-13 11:29:57|INFO|Next check at: 11:34:57
+2025-04-13 11:34:57|INFO|
+2025-04-13 11:34:57|INFO|Starting feed check
+2025-04-13 11:34:57|INFO|Checking Moneycontrol Latest
+2025-04-13 11:34:57|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:34:57|INFO|Checking Moneycontrol Business
+2025-04-13 11:34:57|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 11:34:57|INFO|Checking Moneycontrol Markets
+2025-04-13 11:34:57|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:34:57|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:34:58|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:34:58|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:34:58|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:34:58|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:34:58|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:34:58|INFO|Checking Moneycontrol Economy
+2025-04-13 11:34:58|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:34:58|INFO|Checking Moneycontrol Technology
+2025-04-13 11:34:59|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:34:59|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:34:59|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:34:59|INFO|Checking Moneycontrol International
+2025-04-13 11:34:59|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:34:59|INFO|Checking Moneycontrol Banking
+2025-04-13 11:35:00|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:35:00|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:35:00|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:35:00|INFO|Checking Mint Markets
+2025-04-13 11:35:00|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:35:00|INFO|Checking Mint Business
+2025-04-13 11:35:01|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:35:01|INFO|Checking Mint Industry
+2025-04-13 11:35:01|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:35:01|INFO|Checking Mint Money
+2025-04-13 11:35:01|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:35:01|INFO|Checking Mint Technology
+2025-04-13 11:35:01|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:35:01|INFO|Checking Mint AI
+2025-04-13 11:35:01|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:35:01|INFO|Checking Business Today
+2025-04-13 11:35:01|INFO|Found 1 new articles in Business Today
+2025-04-13 11:35:01|INFO|Database connection established!
+2025-04-13 11:35:01|INFO|Stored 1 articles successfully!
+2025-04-13 11:35:01|INFO|Finished! Total new articles: 1
+2025-04-13 11:35:01|INFO|
+2025-04-13 11:35:01|INFO|Next check at: 11:40:01
+2025-04-13 11:40:01|INFO|
+2025-04-13 11:40:01|INFO|Starting feed check
+2025-04-13 11:40:01|INFO|Checking Moneycontrol Latest
+2025-04-13 11:40:01|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:40:01|INFO|Checking Moneycontrol Business
+2025-04-13 11:40:02|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 11:40:02|INFO|Checking Moneycontrol Markets
+2025-04-13 11:40:02|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:40:02|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:40:02|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:40:02|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:40:02|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:40:02|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:40:03|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:40:03|INFO|Checking Moneycontrol Economy
+2025-04-13 11:40:03|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:40:03|INFO|Checking Moneycontrol Technology
+2025-04-13 11:40:03|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:40:03|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:40:04|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:40:04|INFO|Checking Moneycontrol International
+2025-04-13 11:40:04|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:40:04|INFO|Checking Moneycontrol Banking
+2025-04-13 11:40:04|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:40:04|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:40:05|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:40:05|INFO|Checking Mint Markets
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:40:05|INFO|Checking Mint Business
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:40:05|INFO|Checking Mint Industry
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:40:05|INFO|Checking Mint Money
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:40:05|INFO|Checking Mint Technology
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:40:05|INFO|Checking Mint AI
+2025-04-13 11:40:05|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:40:05|INFO|Checking Business Today
+2025-04-13 11:40:06|INFO|Found 0 new articles in Business Today
+2025-04-13 11:40:06|INFO|Finished! Total new articles: 0
+2025-04-13 11:40:06|INFO|
+2025-04-13 11:40:06|INFO|Next check at: 11:45:06
+2025-04-13 11:45:06|INFO|
+2025-04-13 11:45:06|INFO|Starting feed check
+2025-04-13 11:45:06|INFO|Checking Moneycontrol Latest
+2025-04-13 11:45:06|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:45:06|INFO|Checking Moneycontrol Business
+2025-04-13 11:45:06|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 11:45:06|INFO|Checking Moneycontrol Markets
+2025-04-13 11:45:06|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:45:06|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:45:06|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:45:06|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:45:07|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:45:07|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:45:07|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:45:07|INFO|Checking Moneycontrol Economy
+2025-04-13 11:45:07|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:45:07|INFO|Checking Moneycontrol Technology
+2025-04-13 11:45:07|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:45:07|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:45:08|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:45:08|INFO|Checking Moneycontrol International
+2025-04-13 11:45:08|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:45:08|INFO|Checking Moneycontrol Banking
+2025-04-13 11:45:09|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:45:09|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:45:09|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:45:09|INFO|Checking Mint Markets
+2025-04-13 11:45:09|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:45:09|INFO|Checking Mint Business
+2025-04-13 11:45:09|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:45:09|INFO|Checking Mint Industry
+2025-04-13 11:45:09|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:45:09|INFO|Checking Mint Money
+2025-04-13 11:45:09|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:45:09|INFO|Checking Mint Technology
+2025-04-13 11:45:10|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:45:10|INFO|Checking Mint AI
+2025-04-13 11:45:10|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:45:10|INFO|Checking Business Today
+2025-04-13 11:45:10|INFO|Found 0 new articles in Business Today
+2025-04-13 11:45:10|INFO|Finished! Total new articles: 0
+2025-04-13 11:45:10|INFO|
+2025-04-13 11:45:10|INFO|Next check at: 11:50:10
+2025-04-13 11:50:10|INFO|
+2025-04-13 11:50:10|INFO|Starting feed check
+2025-04-13 11:50:10|INFO|Checking Moneycontrol Latest
+2025-04-13 11:50:10|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:50:10|INFO|Checking Moneycontrol Business
+2025-04-13 11:50:10|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 11:50:10|INFO|Checking Moneycontrol Markets
+2025-04-13 11:50:11|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:50:11|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:50:11|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:50:11|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:50:11|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:50:11|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:50:12|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:50:12|INFO|Checking Moneycontrol Economy
+2025-04-13 11:50:12|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:50:12|INFO|Checking Moneycontrol Technology
+2025-04-13 11:50:12|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:50:12|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:50:13|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:50:13|INFO|Checking Moneycontrol International
+2025-04-13 11:50:13|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:50:13|INFO|Checking Moneycontrol Banking
+2025-04-13 11:50:13|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:50:13|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:50:14|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:50:14|INFO|Checking Mint Markets
+2025-04-13 11:50:14|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:50:14|INFO|Checking Mint Business
+2025-04-13 11:50:14|INFO|Found 1 new articles in Mint Business
+2025-04-13 11:50:14|INFO|Database connection established!
+2025-04-13 11:50:14|INFO|Stored 1 articles successfully!
+2025-04-13 11:50:14|INFO|Checking Mint Industry
+2025-04-13 11:50:14|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:50:14|INFO|Checking Mint Money
+2025-04-13 11:50:14|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:50:14|INFO|Checking Mint Technology
+2025-04-13 11:50:14|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:50:14|INFO|Checking Mint AI
+2025-04-13 11:50:14|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:50:14|INFO|Checking Business Today
+2025-04-13 11:50:15|INFO|Found 0 new articles in Business Today
+2025-04-13 11:50:15|INFO|Finished! Total new articles: 1
+2025-04-13 11:50:15|INFO|
+2025-04-13 11:50:15|INFO|Next check at: 11:55:15
+2025-04-13 11:55:15|INFO|
+2025-04-13 11:55:15|INFO|Starting feed check
+2025-04-13 11:55:15|INFO|Checking Moneycontrol Latest
+2025-04-13 11:55:15|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 11:55:15|INFO|Checking Moneycontrol Business
+2025-04-13 11:55:15|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 11:55:15|INFO|Checking Moneycontrol Markets
+2025-04-13 11:55:16|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 11:55:16|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 11:55:16|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 11:55:16|INFO|Checking Moneycontrol IPO News
+2025-04-13 11:55:16|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 11:55:16|INFO|Checking Moneycontrol Commodities
+2025-04-13 11:55:17|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 11:55:17|INFO|Checking Moneycontrol Economy
+2025-04-13 11:55:17|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 11:55:17|INFO|Checking Moneycontrol Technology
+2025-04-13 11:55:17|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 11:55:17|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 11:55:18|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 11:55:18|INFO|Checking Moneycontrol International
+2025-04-13 11:55:18|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 11:55:18|INFO|Checking Moneycontrol Banking
+2025-04-13 11:55:18|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 11:55:18|INFO|Checking Moneycontrol Insurance
+2025-04-13 11:55:19|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 11:55:19|INFO|Checking Mint Markets
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint Markets
+2025-04-13 11:55:19|INFO|Checking Mint Business
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint Business
+2025-04-13 11:55:19|INFO|Checking Mint Industry
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint Industry
+2025-04-13 11:55:19|INFO|Checking Mint Money
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint Money
+2025-04-13 11:55:19|INFO|Checking Mint Technology
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint Technology
+2025-04-13 11:55:19|INFO|Checking Mint AI
+2025-04-13 11:55:19|INFO|Found 0 new articles in Mint AI
+2025-04-13 11:55:19|INFO|Checking Business Today
+2025-04-13 11:55:20|INFO|Found 0 new articles in Business Today
+2025-04-13 11:55:20|INFO|Finished! Total new articles: 0
+2025-04-13 11:55:20|INFO|
+2025-04-13 11:55:20|INFO|Next check at: 12:00:20
+2025-04-13 12:33:28|INFO|
+2025-04-13 12:33:28|INFO|Starting feed check
+2025-04-13 12:33:28|INFO|Checking Moneycontrol Latest
+2025-04-13 12:46:32|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 12:46:32|INFO|Checking Moneycontrol Business
+2025-04-13 12:46:32|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 12:46:32|INFO|Checking Moneycontrol Markets
+2025-04-13 12:46:33|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 12:46:33|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 12:46:33|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 12:46:33|INFO|Checking Moneycontrol IPO News
+2025-04-13 12:46:33|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 12:46:33|INFO|Checking Moneycontrol Commodities
+2025-04-13 12:46:34|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 12:46:34|INFO|Checking Moneycontrol Economy
+2025-04-13 12:46:34|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 12:46:34|INFO|Checking Moneycontrol Technology
+2025-04-13 12:46:35|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 12:46:35|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 12:46:35|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 12:46:35|INFO|Checking Moneycontrol International
+2025-04-13 12:46:36|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 12:46:36|INFO|Checking Moneycontrol Banking
+2025-04-13 12:46:36|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 12:46:36|INFO|Checking Moneycontrol Insurance
+2025-04-13 12:46:36|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 12:46:36|INFO|Checking Mint Markets
+2025-04-13 12:46:37|INFO|Found 1 new articles in Mint Markets
+2025-04-13 12:46:37|INFO|Database connection established!
+2025-04-13 12:46:37|INFO|Stored 1 articles successfully!
+2025-04-13 12:46:37|INFO|Checking Mint Business
+2025-04-13 12:46:37|INFO|Found 0 new articles in Mint Business
+2025-04-13 12:46:37|INFO|Checking Mint Industry
+2025-04-13 12:46:37|INFO|Found 0 new articles in Mint Industry
+2025-04-13 12:46:37|INFO|Checking Mint Money
+2025-04-13 12:46:37|INFO|Found 1 new articles in Mint Money
+2025-04-13 12:46:37|INFO|Database connection established!
+2025-04-13 12:46:37|INFO|Stored 1 articles successfully!
+2025-04-13 12:46:37|INFO|Checking Mint Technology
+2025-04-13 12:46:38|INFO|Found 2 new articles in Mint Technology
+2025-04-13 12:46:38|INFO|Database connection established!
+2025-04-13 12:46:38|INFO|Stored 2 articles successfully!
+2025-04-13 12:46:38|INFO|Checking Mint AI
+2025-04-13 12:46:38|INFO|Found 0 new articles in Mint AI
+2025-04-13 12:46:38|INFO|Checking Business Today
+2025-04-13 12:46:38|INFO|Found 1 new articles in Business Today
+2025-04-13 12:46:38|INFO|Database connection established!
+2025-04-13 12:46:38|INFO|Stored 1 articles successfully!
+2025-04-13 12:46:38|INFO|Finished! Total new articles: 5
+2025-04-13 12:46:38|INFO|
+2025-04-13 12:46:38|INFO|Next check at: 12:51:38
+2025-04-13 12:51:38|INFO|
+2025-04-13 12:51:38|INFO|Starting feed check
+2025-04-13 12:51:38|INFO|Checking Moneycontrol Latest
+2025-04-13 12:51:39|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 12:51:39|INFO|Checking Moneycontrol Business
+2025-04-13 12:51:39|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 12:51:39|INFO|Checking Moneycontrol Markets
+2025-04-13 12:51:39|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 12:51:39|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 12:51:39|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 12:51:39|INFO|Checking Moneycontrol IPO News
+2025-04-13 12:51:39|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 12:51:39|INFO|Checking Moneycontrol Commodities
+2025-04-13 12:51:39|INFO|Failed to parse Moneycontrol Commodities: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 12:51:39|INFO|Checking Moneycontrol Economy
+2025-04-13 12:51:40|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 12:51:40|INFO|Checking Moneycontrol Technology
+2025-04-13 12:51:40|INFO|Failed to parse Moneycontrol Technology: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 12:51:40|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 12:51:40|INFO|Failed to parse Moneycontrol Mutual Funds: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 12:51:40|INFO|Checking Moneycontrol International
+2025-04-13 12:51:40|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 12:51:40|INFO|Checking Moneycontrol Banking
+2025-04-13 12:51:40|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 12:51:40|INFO|Checking Moneycontrol Insurance
+2025-04-13 12:51:40|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 12:51:40|INFO|Checking Mint Markets
+2025-04-13 12:51:41|INFO|Found 1 new articles in Mint Markets
+2025-04-13 12:51:41|INFO|Database connection established!
+2025-04-13 12:51:41|INFO|Stored 1 articles successfully!
+2025-04-13 12:51:41|INFO|Checking Mint Business
+2025-04-13 12:51:41|INFO|Found 0 new articles in Mint Business
+2025-04-13 12:51:41|INFO|Checking Mint Industry
+2025-04-13 12:51:41|INFO|Found 0 new articles in Mint Industry
+2025-04-13 12:51:41|INFO|Checking Mint Money
+2025-04-13 12:51:41|INFO|Found 0 new articles in Mint Money
+2025-04-13 12:51:41|INFO|Checking Mint Technology
+2025-04-13 12:51:41|INFO|Found 0 new articles in Mint Technology
+2025-04-13 12:51:41|INFO|Checking Mint AI
+2025-04-13 12:51:41|INFO|Found 0 new articles in Mint AI
+2025-04-13 12:51:41|INFO|Checking Business Today
+2025-04-13 12:51:41|INFO|Found 1 new articles in Business Today
+2025-04-13 12:51:41|INFO|Database connection established!
+2025-04-13 12:51:41|INFO|Stored 1 articles successfully!
+2025-04-13 12:51:41|INFO|Finished! Total new articles: 2
+2025-04-13 12:51:41|INFO|
+2025-04-13 12:51:41|INFO|Next check at: 12:56:41
+2025-04-13 12:56:41|INFO|
+2025-04-13 12:56:41|INFO|Starting feed check
+2025-04-13 12:56:41|INFO|Checking Moneycontrol Latest
+2025-04-13 12:56:42|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 12:56:42|INFO|Checking Moneycontrol Business
+2025-04-13 12:56:42|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 12:56:42|INFO|Checking Moneycontrol Markets
+2025-04-13 12:56:42|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 12:56:42|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 12:56:42|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 12:56:42|INFO|Checking Moneycontrol IPO News
+2025-04-13 12:56:43|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Commodities
+2025-04-13 12:56:43|INFO|Failed to parse Moneycontrol Commodities: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Economy
+2025-04-13 12:56:43|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Technology
+2025-04-13 12:56:43|INFO|Failed to parse Moneycontrol Technology: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 12:56:43|INFO|Failed to parse Moneycontrol Mutual Funds: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 12:56:43|INFO|Checking Moneycontrol International
+2025-04-13 12:56:43|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Banking
+2025-04-13 12:56:43|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 12:56:43|INFO|Checking Moneycontrol Insurance
+2025-04-13 12:56:44|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 12:56:44|INFO|Checking Mint Markets
+2025-04-13 12:56:44|INFO|Found 0 new articles in Mint Markets
+2025-04-13 12:56:44|INFO|Checking Mint Business
+2025-04-13 12:56:44|INFO|Found 1 new articles in Mint Business
+2025-04-13 12:56:44|INFO|Database connection established!
+2025-04-13 12:56:44|INFO|Stored 1 articles successfully!
+2025-04-13 12:56:44|INFO|Checking Mint Industry
+2025-04-13 12:56:44|INFO|Found 0 new articles in Mint Industry
+2025-04-13 12:56:44|INFO|Checking Mint Money
+2025-04-13 12:56:44|INFO|Found 0 new articles in Mint Money
+2025-04-13 12:56:44|INFO|Checking Mint Technology
+2025-04-13 12:56:44|INFO|Found 0 new articles in Mint Technology
+2025-04-13 12:56:44|INFO|Checking Mint AI
+2025-04-13 12:56:44|INFO|Found 0 new articles in Mint AI
+2025-04-13 12:56:44|INFO|Checking Business Today
+2025-04-13 12:56:44|INFO|Found 0 new articles in Business Today
+2025-04-13 12:56:44|INFO|Finished! Total new articles: 1
+2025-04-13 12:56:44|INFO|
+2025-04-13 12:56:44|INFO|Next check at: 13:01:44
+2025-04-13 13:01:45|INFO|
+2025-04-13 13:01:45|INFO|Starting feed check
+2025-04-13 13:01:45|INFO|Checking Moneycontrol Latest
+2025-04-13 13:01:45|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 13:01:45|INFO|Checking Moneycontrol Business
+2025-04-13 13:01:45|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 13:01:45|INFO|Checking Moneycontrol Markets
+2025-04-13 13:01:45|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 13:01:45|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 13:01:45|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 13:01:45|INFO|Checking Moneycontrol IPO News
+2025-04-13 13:01:45|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 13:01:45|INFO|Checking Moneycontrol Commodities
+2025-04-13 13:01:46|INFO|Failed to parse Moneycontrol Commodities: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 13:01:46|INFO|Checking Moneycontrol Economy
+2025-04-13 13:01:46|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 13:01:46|INFO|Checking Moneycontrol Technology
+2025-04-13 13:01:46|INFO|Failed to parse Moneycontrol Technology: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 13:01:46|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 13:01:46|INFO|Failed to parse Moneycontrol Mutual Funds: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 13:01:46|INFO|Checking Moneycontrol International
+2025-04-13 13:01:46|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 13:01:46|INFO|Checking Moneycontrol Banking
+2025-04-13 13:01:47|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 13:01:47|INFO|Checking Moneycontrol Insurance
+2025-04-13 13:01:47|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 13:01:47|INFO|Checking Mint Markets
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint Markets
+2025-04-13 13:01:47|INFO|Checking Mint Business
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint Business
+2025-04-13 13:01:47|INFO|Checking Mint Industry
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint Industry
+2025-04-13 13:01:47|INFO|Checking Mint Money
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint Money
+2025-04-13 13:01:47|INFO|Checking Mint Technology
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint Technology
+2025-04-13 13:01:47|INFO|Checking Mint AI
+2025-04-13 13:01:47|INFO|Found 0 new articles in Mint AI
+2025-04-13 13:01:47|INFO|Checking Business Today
+2025-04-13 13:01:48|INFO|Found 0 new articles in Business Today
+2025-04-13 13:01:48|INFO|Finished! Total new articles: 0
+2025-04-13 13:01:48|INFO|
+2025-04-13 13:01:48|INFO|Next check at: 13:06:48
+2025-04-13 13:06:48|INFO|
+2025-04-13 13:06:48|INFO|Starting feed check
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Latest
+2025-04-13 13:06:48|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Business
+2025-04-13 13:06:48|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Markets
+2025-04-13 13:06:48|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 13:06:48|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 13:06:48|INFO|Checking Moneycontrol IPO News
+2025-04-13 13:06:48|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Commodities
+2025-04-13 13:06:48|INFO|Failed to parse Moneycontrol Commodities: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Economy
+2025-04-13 13:06:48|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 13:06:48|INFO|Checking Moneycontrol Technology
+2025-04-13 13:06:49|INFO|Failed to parse Moneycontrol Technology: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 13:06:49|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 13:06:49|INFO|Failed to parse Moneycontrol Mutual Funds: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 13:06:49|INFO|Checking Moneycontrol International
+2025-04-13 13:06:49|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 13:06:49|INFO|Checking Moneycontrol Banking
+2025-04-13 13:06:49|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 13:06:49|INFO|Checking Moneycontrol Insurance
+2025-04-13 13:06:49|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 13:06:49|INFO|Checking Mint Markets
+2025-04-13 13:06:49|INFO|Found 1 new articles in Mint Markets
+2025-04-13 13:06:49|INFO|Database connection established!
+2025-04-13 13:06:49|INFO|Stored 1 articles successfully!
+2025-04-13 13:06:49|INFO|Checking Mint Business
+2025-04-13 13:06:49|INFO|Found 0 new articles in Mint Business
+2025-04-13 13:06:49|INFO|Checking Mint Industry
+2025-04-13 13:06:50|INFO|Found 0 new articles in Mint Industry
+2025-04-13 13:06:50|INFO|Checking Mint Money
+2025-04-13 13:06:50|INFO|Found 0 new articles in Mint Money
+2025-04-13 13:06:50|INFO|Checking Mint Technology
+2025-04-13 13:06:50|INFO|Found 0 new articles in Mint Technology
+2025-04-13 13:06:50|INFO|Checking Mint AI
+2025-04-13 13:06:50|INFO|Found 0 new articles in Mint AI
+2025-04-13 13:06:50|INFO|Checking Business Today
+2025-04-13 13:06:50|INFO|Found 0 new articles in Business Today
+2025-04-13 13:06:50|INFO|Finished! Total new articles: 1
+2025-04-13 13:06:50|INFO|
+2025-04-13 13:06:50|INFO|Next check at: 13:11:50
+2025-04-13 13:11:50|INFO|
+2025-04-13 13:11:50|INFO|Starting feed check
+2025-04-13 13:11:50|INFO|Checking Moneycontrol Latest
+2025-04-13 13:11:51|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Business
+2025-04-13 13:11:51|INFO|Found 0 new articles in Moneycontrol Business
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Markets
+2025-04-13 13:11:51|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 13:11:51|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 13:11:51|INFO|Checking Moneycontrol IPO News
+2025-04-13 13:11:51|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Commodities
+2025-04-13 13:11:51|INFO|Failed to parse Moneycontrol Commodities: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/commodities.xml
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Economy
+2025-04-13 13:11:51|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 13:11:51|INFO|Checking Moneycontrol Technology
+2025-04-13 13:11:52|INFO|Failed to parse Moneycontrol Technology: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/technology.xml
+2025-04-13 13:11:52|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 13:11:52|INFO|Failed to parse Moneycontrol Mutual Funds: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/mfnews.xml
+2025-04-13 13:11:52|INFO|Checking Moneycontrol International
+2025-04-13 13:11:52|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 13:11:52|INFO|Checking Moneycontrol Banking
+2025-04-13 13:11:52|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 13:11:52|INFO|Checking Moneycontrol Insurance
+2025-04-13 13:11:52|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 13:11:52|INFO|Checking Mint Markets
+2025-04-13 13:11:52|INFO|Found 0 new articles in Mint Markets
+2025-04-13 13:11:52|INFO|Checking Mint Business
+2025-04-13 13:11:52|INFO|Found 0 new articles in Mint Business
+2025-04-13 13:11:52|INFO|Checking Mint Industry
+2025-04-13 13:11:52|INFO|Found 0 new articles in Mint Industry
+2025-04-13 13:11:52|INFO|Checking Mint Money
+2025-04-13 13:11:53|INFO|Found 0 new articles in Mint Money
+2025-04-13 13:11:53|INFO|Checking Mint Technology
+2025-04-13 13:11:53|INFO|Found 0 new articles in Mint Technology
+2025-04-13 13:11:53|INFO|Checking Mint AI
+2025-04-13 13:11:53|INFO|Found 0 new articles in Mint AI
+2025-04-13 13:11:53|INFO|Checking Business Today
+2025-04-13 13:11:53|INFO|Found 0 new articles in Business Today
+2025-04-13 13:11:53|INFO|Finished! Total new articles: 0
+2025-04-13 13:11:53|INFO|
+2025-04-13 13:11:53|INFO|Next check at: 13:16:53
+2025-04-13 21:17:25|INFO|
+2025-04-13 21:17:25|INFO|Starting feed check
+2025-04-13 21:17:25|INFO|Checking Moneycontrol Latest
+2025-04-13 21:17:25|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:17:25|INFO|Checking Moneycontrol Business
+2025-04-13 21:17:25|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:17:25|INFO|Checking Moneycontrol Markets
+2025-04-13 21:17:25|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:17:25|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:17:26|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:17:26|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:17:26|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:17:26|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:17:27|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:17:27|INFO|Checking Moneycontrol Economy
+2025-04-13 21:17:27|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:17:27|INFO|Checking Moneycontrol Technology
+2025-04-13 21:17:28|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:17:28|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:17:28|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:17:28|INFO|Checking Moneycontrol International
+2025-04-13 21:17:29|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:17:29|INFO|Checking Moneycontrol Banking
+2025-04-13 21:17:29|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:17:29|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:17:30|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:17:30|INFO|Checking Mint Markets
+2025-04-13 21:17:30|INFO|Found 10 new articles in Mint Markets
+2025-04-13 21:17:30|INFO|Database connection established!
+2025-04-13 21:17:30|INFO|Stored 10 articles successfully!
+2025-04-13 21:17:30|INFO|Checking Mint Business
+2025-04-13 21:17:30|INFO|Found 8 new articles in Mint Business
+2025-04-13 21:17:30|INFO|Database connection established!
+2025-04-13 21:17:30|INFO|Stored 8 articles successfully!
+2025-04-13 21:17:30|INFO|Checking Mint Industry
+2025-04-13 21:17:30|INFO|Found 4 new articles in Mint Industry
+2025-04-13 21:17:30|INFO|Database connection established!
+2025-04-13 21:17:30|INFO|Stored 4 articles successfully!
+2025-04-13 21:17:30|INFO|Checking Mint Money
+2025-04-13 21:17:30|INFO|Found 2 new articles in Mint Money
+2025-04-13 21:17:30|INFO|Database connection established!
+2025-04-13 21:17:30|INFO|Stored 2 articles successfully!
+2025-04-13 21:17:30|INFO|Checking Mint Technology
+2025-04-13 21:17:30|INFO|Found 2 new articles in Mint Technology
+2025-04-13 21:17:30|INFO|Database connection established!
+2025-04-13 21:17:30|INFO|Stored 2 articles successfully!
+2025-04-13 21:17:30|INFO|Checking Mint AI
+2025-04-13 21:17:31|INFO|Found 2 new articles in Mint AI
+2025-04-13 21:17:31|INFO|Database connection established!
+2025-04-13 21:17:31|INFO|Stored 2 articles successfully!
+2025-04-13 21:17:31|INFO|Checking Business Today
+2025-04-13 21:17:31|INFO|Found 9 new articles in Business Today
+2025-04-13 21:17:31|INFO|Database connection established!
+2025-04-13 21:17:31|INFO|Stored 9 articles successfully!
+2025-04-13 21:17:31|INFO|Finished! Total new articles: 37
+2025-04-13 21:17:31|INFO|
+2025-04-13 21:17:31|INFO|Next check at: 21:22:31
+2025-04-13 21:22:31|INFO|
+2025-04-13 21:22:31|INFO|Starting feed check
+2025-04-13 21:22:31|INFO|Checking Moneycontrol Latest
+2025-04-13 21:22:31|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:22:31|INFO|Checking Moneycontrol Business
+2025-04-13 21:22:31|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:22:31|INFO|Checking Moneycontrol Markets
+2025-04-13 21:22:32|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:22:32|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:22:32|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:22:32|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:22:32|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:22:32|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:22:33|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:22:33|INFO|Checking Moneycontrol Economy
+2025-04-13 21:22:33|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:22:33|INFO|Checking Moneycontrol Technology
+2025-04-13 21:22:33|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:22:33|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:22:34|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:22:34|INFO|Checking Moneycontrol International
+2025-04-13 21:22:34|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:22:34|INFO|Checking Moneycontrol Banking
+2025-04-13 21:22:34|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:22:34|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:22:35|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:22:35|INFO|Checking Mint Markets
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint Markets
+2025-04-13 21:22:35|INFO|Checking Mint Business
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint Business
+2025-04-13 21:22:35|INFO|Checking Mint Industry
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint Industry
+2025-04-13 21:22:35|INFO|Checking Mint Money
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint Money
+2025-04-13 21:22:35|INFO|Checking Mint Technology
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint Technology
+2025-04-13 21:22:35|INFO|Checking Mint AI
+2025-04-13 21:22:35|INFO|Found 0 new articles in Mint AI
+2025-04-13 21:22:35|INFO|Checking Business Today
+2025-04-13 21:22:36|INFO|Found 0 new articles in Business Today
+2025-04-13 21:22:36|INFO|Finished! Total new articles: 0
+2025-04-13 21:22:36|INFO|
+2025-04-13 21:22:36|INFO|Next check at: 21:27:36
+2025-04-13 21:39:36|INFO|
+2025-04-13 21:39:36|INFO|Starting feed check
+2025-04-13 21:39:36|INFO|Checking Moneycontrol Latest
+2025-04-13 21:39:36|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:39:36|INFO|Checking Moneycontrol Business
+2025-04-13 21:39:37|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:39:37|INFO|Checking Moneycontrol Markets
+2025-04-13 21:39:37|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:39:37|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:39:37|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:39:37|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:39:37|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:39:37|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:39:38|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:39:38|INFO|Checking Moneycontrol Economy
+2025-04-13 21:39:38|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:39:38|INFO|Checking Moneycontrol Technology
+2025-04-13 21:39:39|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:39:39|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:39:39|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:39:39|INFO|Checking Moneycontrol International
+2025-04-13 21:39:39|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:39:39|INFO|Checking Moneycontrol Banking
+2025-04-13 21:39:40|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:39:40|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:39:40|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:39:40|INFO|Checking Mint Markets
+2025-04-13 21:39:40|INFO|Found 0 new articles in Mint Markets
+2025-04-13 21:39:40|INFO|Checking Mint Business
+2025-04-13 21:39:40|INFO|Found 0 new articles in Mint Business
+2025-04-13 21:39:40|INFO|Checking Mint Industry
+2025-04-13 21:39:40|INFO|Found 0 new articles in Mint Industry
+2025-04-13 21:39:40|INFO|Checking Mint Money
+2025-04-13 21:39:40|INFO|Found 0 new articles in Mint Money
+2025-04-13 21:39:40|INFO|Checking Mint Technology
+2025-04-13 21:39:40|INFO|Found 0 new articles in Mint Technology
+2025-04-13 21:39:40|INFO|Checking Mint AI
+2025-04-13 21:39:41|INFO|Found 0 new articles in Mint AI
+2025-04-13 21:39:41|INFO|Checking Business Today
+2025-04-13 21:39:41|INFO|Found 0 new articles in Business Today
+2025-04-13 21:39:41|INFO|Finished! Total new articles: 0
+2025-04-13 21:39:41|INFO|
+2025-04-13 21:39:41|INFO|Next check at: 21:44:41
+2025-04-13 21:44:41|INFO|
+2025-04-13 21:44:41|INFO|Starting feed check
+2025-04-13 21:44:41|INFO|Checking Moneycontrol Latest
+2025-04-13 21:44:41|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:44:41|INFO|Checking Moneycontrol Business
+2025-04-13 21:44:41|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:44:41|INFO|Checking Moneycontrol Markets
+2025-04-13 21:44:41|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:44:41|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:44:42|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:44:42|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:44:42|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:44:42|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:44:43|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:44:43|INFO|Checking Moneycontrol Economy
+2025-04-13 21:44:43|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:44:43|INFO|Checking Moneycontrol Technology
+2025-04-13 21:44:43|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:44:43|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:44:44|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:44:44|INFO|Checking Moneycontrol International
+2025-04-13 21:44:44|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:44:44|INFO|Checking Moneycontrol Banking
+2025-04-13 21:44:44|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:44:44|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:44:45|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:44:45|INFO|Checking Mint Markets
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint Markets
+2025-04-13 21:44:45|INFO|Checking Mint Business
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint Business
+2025-04-13 21:44:45|INFO|Checking Mint Industry
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint Industry
+2025-04-13 21:44:45|INFO|Checking Mint Money
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint Money
+2025-04-13 21:44:45|INFO|Checking Mint Technology
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint Technology
+2025-04-13 21:44:45|INFO|Checking Mint AI
+2025-04-13 21:44:45|INFO|Found 0 new articles in Mint AI
+2025-04-13 21:44:45|INFO|Checking Business Today
+2025-04-13 21:44:46|INFO|Found 0 new articles in Business Today
+2025-04-13 21:44:46|INFO|Finished! Total new articles: 0
+2025-04-13 21:44:46|INFO|
+2025-04-13 21:44:46|INFO|Next check at: 21:49:46
+2025-04-13 21:49:46|INFO|
+2025-04-13 21:49:46|INFO|Starting feed check
+2025-04-13 21:49:46|INFO|Checking Moneycontrol Latest
+2025-04-13 21:49:46|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:49:46|INFO|Checking Moneycontrol Business
+2025-04-13 21:49:46|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:49:46|INFO|Checking Moneycontrol Markets
+2025-04-13 21:49:46|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:49:46|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:49:47|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:49:47|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:49:47|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:49:47|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:49:47|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:49:47|INFO|Checking Moneycontrol Economy
+2025-04-13 21:49:47|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:49:47|INFO|Checking Moneycontrol Technology
+2025-04-13 21:49:48|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:49:48|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:49:48|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:49:48|INFO|Checking Moneycontrol International
+2025-04-13 21:49:48|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:49:48|INFO|Checking Moneycontrol Banking
+2025-04-13 21:49:49|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:49:49|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:49:49|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:49:49|INFO|Checking Mint Markets
+2025-04-13 21:49:49|INFO|Found 0 new articles in Mint Markets
+2025-04-13 21:49:49|INFO|Checking Mint Business
+2025-04-13 21:49:49|INFO|Found 0 new articles in Mint Business
+2025-04-13 21:49:49|INFO|Checking Mint Industry
+2025-04-13 21:49:49|INFO|Found 0 new articles in Mint Industry
+2025-04-13 21:49:49|INFO|Checking Mint Money
+2025-04-13 21:49:49|INFO|Found 0 new articles in Mint Money
+2025-04-13 21:49:49|INFO|Checking Mint Technology
+2025-04-13 21:49:49|INFO|Found 0 new articles in Mint Technology
+2025-04-13 21:49:49|INFO|Checking Mint AI
+2025-04-13 21:49:50|INFO|Found 0 new articles in Mint AI
+2025-04-13 21:49:50|INFO|Checking Business Today
+2025-04-13 21:49:50|INFO|Found 0 new articles in Business Today
+2025-04-13 21:49:50|INFO|Finished! Total new articles: 0
+2025-04-13 21:49:50|INFO|
+2025-04-13 21:49:50|INFO|Next check at: 21:54:50
+2025-04-13 21:54:50|INFO|
+2025-04-13 21:54:50|INFO|Starting feed check
+2025-04-13 21:54:50|INFO|Checking Moneycontrol Latest
+2025-04-13 21:54:50|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:54:50|INFO|Checking Moneycontrol Business
+2025-04-13 21:54:50|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:54:50|INFO|Checking Moneycontrol Markets
+2025-04-13 21:54:51|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:54:51|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:54:51|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:54:51|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:54:51|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:54:51|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:54:52|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:54:52|INFO|Checking Moneycontrol Economy
+2025-04-13 21:54:52|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:54:52|INFO|Checking Moneycontrol Technology
+2025-04-13 21:54:53|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:54:53|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:54:53|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:54:53|INFO|Checking Moneycontrol International
+2025-04-13 21:54:53|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:54:53|INFO|Checking Moneycontrol Banking
+2025-04-13 21:54:54|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:54:54|INFO|Checking Moneycontrol Insurance
+2025-04-13 21:54:54|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 21:54:54|INFO|Checking Mint Markets
+2025-04-13 21:54:54|INFO|Found 0 new articles in Mint Markets
+2025-04-13 21:54:54|INFO|Checking Mint Business
+2025-04-13 21:54:54|INFO|Found 0 new articles in Mint Business
+2025-04-13 21:54:54|INFO|Checking Mint Industry
+2025-04-13 21:54:54|INFO|Found 0 new articles in Mint Industry
+2025-04-13 21:54:54|INFO|Checking Mint Money
+2025-04-13 21:54:54|INFO|Found 0 new articles in Mint Money
+2025-04-13 21:54:54|INFO|Checking Mint Technology
+2025-04-13 21:54:54|INFO|Found 0 new articles in Mint Technology
+2025-04-13 21:54:54|INFO|Checking Mint AI
+2025-04-13 21:54:55|INFO|Found 0 new articles in Mint AI
+2025-04-13 21:54:55|INFO|Checking Business Today
+2025-04-13 21:54:56|INFO|Found 0 new articles in Business Today
+2025-04-13 21:54:56|INFO|Finished! Total new articles: 0
+2025-04-13 21:54:56|INFO|
+2025-04-13 21:54:56|INFO|Next check at: 21:59:56
+2025-04-13 21:59:56|INFO|
+2025-04-13 21:59:56|INFO|Starting feed check
+2025-04-13 21:59:56|INFO|Checking Moneycontrol Latest
+2025-04-13 21:59:56|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 21:59:56|INFO|Checking Moneycontrol Business
+2025-04-13 21:59:56|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 21:59:56|INFO|Checking Moneycontrol Markets
+2025-04-13 21:59:57|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 21:59:57|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 21:59:57|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 21:59:57|INFO|Checking Moneycontrol IPO News
+2025-04-13 21:59:57|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 21:59:57|INFO|Checking Moneycontrol Commodities
+2025-04-13 21:59:58|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 21:59:58|INFO|Checking Moneycontrol Economy
+2025-04-13 21:59:58|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 21:59:58|INFO|Checking Moneycontrol Technology
+2025-04-13 21:59:58|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 21:59:58|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 21:59:59|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 21:59:59|INFO|Checking Moneycontrol International
+2025-04-13 21:59:59|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 21:59:59|INFO|Checking Moneycontrol Banking
+2025-04-13 21:59:59|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 21:59:59|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:00:00|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:00:00|INFO|Checking Mint Markets
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:00:00|INFO|Checking Mint Business
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:00:00|INFO|Checking Mint Industry
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:00:00|INFO|Checking Mint Money
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:00:00|INFO|Checking Mint Technology
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:00:00|INFO|Checking Mint AI
+2025-04-13 22:00:00|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:00:00|INFO|Checking Business Today
+2025-04-13 22:00:01|INFO|Found 0 new articles in Business Today
+2025-04-13 22:00:01|INFO|Finished! Total new articles: 0
+2025-04-13 22:00:01|INFO|
+2025-04-13 22:00:01|INFO|Next check at: 22:05:01
+2025-04-13 22:15:52|INFO|
+2025-04-13 22:15:52|INFO|Starting feed check
+2025-04-13 22:15:52|INFO|Checking Moneycontrol Latest
+2025-04-13 22:15:53|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:15:53|INFO|Checking Moneycontrol Business
+2025-04-13 22:15:53|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:15:53|INFO|Checking Moneycontrol Markets
+2025-04-13 22:15:53|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:15:53|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:15:53|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:15:53|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:15:54|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:15:54|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:15:54|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:15:54|INFO|Checking Moneycontrol Economy
+2025-04-13 22:15:54|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:15:54|INFO|Checking Moneycontrol Technology
+2025-04-13 22:15:55|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:15:55|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:15:55|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:15:55|INFO|Checking Moneycontrol International
+2025-04-13 22:15:55|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:15:55|INFO|Checking Moneycontrol Banking
+2025-04-13 22:15:56|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:15:56|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:15:56|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:15:56|INFO|Checking Mint Markets
+2025-04-13 22:15:56|INFO|Found 1 new articles in Mint Markets
+2025-04-13 22:15:56|INFO|Database connection established!
+2025-04-13 22:15:56|INFO|Stored 1 articles successfully!
+2025-04-13 22:15:56|INFO|Checking Mint Business
+2025-04-13 22:15:56|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:15:56|INFO|Checking Mint Industry
+2025-04-13 22:15:56|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:15:56|INFO|Checking Mint Money
+2025-04-13 22:15:56|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:15:56|INFO|Checking Mint Technology
+2025-04-13 22:15:57|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:15:57|INFO|Checking Mint AI
+2025-04-13 22:15:57|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:15:57|INFO|Checking Business Today
+2025-04-13 22:15:57|INFO|Found 0 new articles in Business Today
+2025-04-13 22:15:57|INFO|Finished! Total new articles: 1
+2025-04-13 22:15:57|INFO|
+2025-04-13 22:15:57|INFO|Next check at: 22:20:57
+2025-04-13 22:20:57|INFO|
+2025-04-13 22:20:57|INFO|Starting feed check
+2025-04-13 22:20:57|INFO|Checking Moneycontrol Latest
+2025-04-13 22:20:57|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:20:57|INFO|Checking Moneycontrol Business
+2025-04-13 22:20:57|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:20:57|INFO|Checking Moneycontrol Markets
+2025-04-13 22:20:58|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:20:58|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:20:58|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:20:58|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:20:58|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:20:58|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:20:59|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:20:59|INFO|Checking Moneycontrol Economy
+2025-04-13 22:20:59|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:20:59|INFO|Checking Moneycontrol Technology
+2025-04-13 22:21:00|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:21:00|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:21:00|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:21:00|INFO|Checking Moneycontrol International
+2025-04-13 22:21:00|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:21:00|INFO|Checking Moneycontrol Banking
+2025-04-13 22:21:01|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:21:01|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:21:01|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:21:01|INFO|Checking Mint Markets
+2025-04-13 22:21:01|INFO|Found 1 new articles in Mint Markets
+2025-04-13 22:21:01|INFO|Database connection established!
+2025-04-13 22:21:01|INFO|Stored 1 articles successfully!
+2025-04-13 22:21:01|INFO|Checking Mint Business
+2025-04-13 22:21:01|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:21:01|INFO|Checking Mint Industry
+2025-04-13 22:21:01|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:21:01|INFO|Checking Mint Money
+2025-04-13 22:21:01|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:21:01|INFO|Checking Mint Technology
+2025-04-13 22:21:01|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:21:01|INFO|Checking Mint AI
+2025-04-13 22:21:01|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:21:01|INFO|Checking Business Today
+2025-04-13 22:21:02|INFO|Found 0 new articles in Business Today
+2025-04-13 22:21:02|INFO|Finished! Total new articles: 1
+2025-04-13 22:21:02|INFO|
+2025-04-13 22:21:02|INFO|Next check at: 22:26:02
+2025-04-13 22:26:02|INFO|
+2025-04-13 22:26:02|INFO|Starting feed check
+2025-04-13 22:26:02|INFO|Checking Moneycontrol Latest
+2025-04-13 22:26:02|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:26:02|INFO|Checking Moneycontrol Business
+2025-04-13 22:26:02|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:26:02|INFO|Checking Moneycontrol Markets
+2025-04-13 22:26:02|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:26:02|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:26:03|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:26:03|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:26:03|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:26:03|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:26:03|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:26:03|INFO|Checking Moneycontrol Economy
+2025-04-13 22:26:04|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:26:04|INFO|Checking Moneycontrol Technology
+2025-04-13 22:26:04|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:26:04|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:26:04|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:26:04|INFO|Checking Moneycontrol International
+2025-04-13 22:26:04|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:26:04|INFO|Checking Moneycontrol Banking
+2025-04-13 22:26:05|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:26:05|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:26:05|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:26:05|INFO|Checking Mint Markets
+2025-04-13 22:26:05|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:26:05|INFO|Checking Mint Business
+2025-04-13 22:26:05|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:26:05|INFO|Checking Mint Industry
+2025-04-13 22:26:05|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:26:05|INFO|Checking Mint Money
+2025-04-13 22:26:06|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:26:06|INFO|Checking Mint Technology
+2025-04-13 22:26:06|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:26:06|INFO|Checking Mint AI
+2025-04-13 22:26:06|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:26:06|INFO|Checking Business Today
+2025-04-13 22:26:06|INFO|Found 0 new articles in Business Today
+2025-04-13 22:26:06|INFO|Finished! Total new articles: 0
+2025-04-13 22:26:06|INFO|
+2025-04-13 22:26:06|INFO|Next check at: 22:31:06
+2025-04-13 22:31:06|INFO|
+2025-04-13 22:31:06|INFO|Starting feed check
+2025-04-13 22:31:06|INFO|Checking Moneycontrol Latest
+2025-04-13 22:31:06|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:31:06|INFO|Checking Moneycontrol Business
+2025-04-13 22:31:06|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:31:06|INFO|Checking Moneycontrol Markets
+2025-04-13 22:31:07|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:31:07|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:31:07|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:31:07|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:31:07|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:31:07|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:31:08|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:31:08|INFO|Checking Moneycontrol Economy
+2025-04-13 22:31:08|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:31:08|INFO|Checking Moneycontrol Technology
+2025-04-13 22:31:08|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:31:08|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:31:09|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:31:09|INFO|Checking Moneycontrol International
+2025-04-13 22:31:09|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:31:09|INFO|Checking Moneycontrol Banking
+2025-04-13 22:31:09|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:31:09|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:31:09|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:31:09|INFO|Checking Mint Markets
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:31:10|INFO|Checking Mint Business
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:31:10|INFO|Checking Mint Industry
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:31:10|INFO|Checking Mint Money
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:31:10|INFO|Checking Mint Technology
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:31:10|INFO|Checking Mint AI
+2025-04-13 22:31:10|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:31:10|INFO|Checking Business Today
+2025-04-13 22:31:10|INFO|Found 0 new articles in Business Today
+2025-04-13 22:31:10|INFO|Finished! Total new articles: 0
+2025-04-13 22:31:10|INFO|
+2025-04-13 22:31:10|INFO|Next check at: 22:36:10
+2025-04-13 22:36:10|INFO|
+2025-04-13 22:36:10|INFO|Starting feed check
+2025-04-13 22:36:10|INFO|Checking Moneycontrol Latest
+2025-04-13 22:36:10|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:36:10|INFO|Checking Moneycontrol Business
+2025-04-13 22:36:11|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:36:11|INFO|Checking Moneycontrol Markets
+2025-04-13 22:36:11|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:36:11|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:36:11|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:36:11|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:36:11|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:36:11|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:36:12|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:36:12|INFO|Checking Moneycontrol Economy
+2025-04-13 22:36:12|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:36:12|INFO|Checking Moneycontrol Technology
+2025-04-13 22:36:13|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:36:13|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:36:13|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:36:13|INFO|Checking Moneycontrol International
+2025-04-13 22:36:13|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:36:13|INFO|Checking Moneycontrol Banking
+2025-04-13 22:36:14|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:36:14|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:36:14|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:36:14|INFO|Checking Mint Markets
+2025-04-13 22:36:14|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:36:14|INFO|Checking Mint Business
+2025-04-13 22:36:14|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:36:14|INFO|Checking Mint Industry
+2025-04-13 22:36:15|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:36:15|INFO|Checking Mint Money
+2025-04-13 22:36:15|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:36:15|INFO|Checking Mint Technology
+2025-04-13 22:36:15|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:36:15|INFO|Checking Mint AI
+2025-04-13 22:36:15|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:36:15|INFO|Checking Business Today
+2025-04-13 22:36:15|INFO|Found 0 new articles in Business Today
+2025-04-13 22:36:15|INFO|Finished! Total new articles: 0
+2025-04-13 22:36:15|INFO|
+2025-04-13 22:36:15|INFO|Next check at: 22:41:15
+2025-04-13 22:41:15|INFO|
+2025-04-13 22:41:15|INFO|Starting feed check
+2025-04-13 22:41:15|INFO|Checking Moneycontrol Latest
+2025-04-13 22:41:15|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:41:15|INFO|Checking Moneycontrol Business
+2025-04-13 22:41:15|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:41:15|INFO|Checking Moneycontrol Markets
+2025-04-13 22:41:15|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:41:15|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:41:16|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:41:16|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:41:16|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:41:16|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:41:16|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:41:16|INFO|Checking Moneycontrol Economy
+2025-04-13 22:41:17|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:41:17|INFO|Checking Moneycontrol Technology
+2025-04-13 22:41:17|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:41:17|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:41:17|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:41:17|INFO|Checking Moneycontrol International
+2025-04-13 22:41:17|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:41:17|INFO|Checking Moneycontrol Banking
+2025-04-13 22:41:18|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:41:18|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:41:18|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:41:18|INFO|Checking Mint Markets
+2025-04-13 22:41:18|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:41:18|INFO|Checking Mint Business
+2025-04-13 22:41:18|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:41:18|INFO|Checking Mint Industry
+2025-04-13 22:41:19|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:41:19|INFO|Checking Mint Money
+2025-04-13 22:41:19|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:41:19|INFO|Checking Mint Technology
+2025-04-13 22:41:19|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:41:19|INFO|Checking Mint AI
+2025-04-13 22:41:19|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:41:19|INFO|Checking Business Today
+2025-04-13 22:41:19|INFO|Found 0 new articles in Business Today
+2025-04-13 22:41:19|INFO|Finished! Total new articles: 0
+2025-04-13 22:41:19|INFO|
+2025-04-13 22:41:19|INFO|Next check at: 22:46:19
+2025-04-13 22:46:19|INFO|
+2025-04-13 22:46:19|INFO|Starting feed check
+2025-04-13 22:46:19|INFO|Checking Moneycontrol Latest
+2025-04-13 22:46:19|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:46:19|INFO|Checking Moneycontrol Business
+2025-04-13 22:46:19|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:46:19|INFO|Checking Moneycontrol Markets
+2025-04-13 22:46:20|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:46:20|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:46:20|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:46:20|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:46:20|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:46:20|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:46:21|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:46:21|INFO|Checking Moneycontrol Economy
+2025-04-13 22:46:21|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:46:21|INFO|Checking Moneycontrol Technology
+2025-04-13 22:46:21|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:46:21|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:46:22|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:46:22|INFO|Checking Moneycontrol International
+2025-04-13 22:46:22|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:46:22|INFO|Checking Moneycontrol Banking
+2025-04-13 22:46:22|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:46:22|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:46:23|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:46:23|INFO|Checking Mint Markets
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:46:23|INFO|Checking Mint Business
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:46:23|INFO|Checking Mint Industry
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:46:23|INFO|Checking Mint Money
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:46:23|INFO|Checking Mint Technology
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:46:23|INFO|Checking Mint AI
+2025-04-13 22:46:23|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:46:23|INFO|Checking Business Today
+2025-04-13 22:46:24|INFO|Found 0 new articles in Business Today
+2025-04-13 22:46:24|INFO|Finished! Total new articles: 0
+2025-04-13 22:46:24|INFO|
+2025-04-13 22:46:24|INFO|Next check at: 22:51:24
+2025-04-13 22:51:24|INFO|
+2025-04-13 22:51:24|INFO|Starting feed check
+2025-04-13 22:51:24|INFO|Checking Moneycontrol Latest
+2025-04-13 22:51:24|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:51:24|INFO|Checking Moneycontrol Business
+2025-04-13 22:51:24|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:51:24|INFO|Checking Moneycontrol Markets
+2025-04-13 22:51:24|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:51:24|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:51:25|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:51:25|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:51:25|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:51:25|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:51:25|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:51:25|INFO|Checking Moneycontrol Economy
+2025-04-13 22:51:25|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:51:25|INFO|Checking Moneycontrol Technology
+2025-04-13 22:51:26|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:51:26|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:51:26|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:51:26|INFO|Checking Moneycontrol International
+2025-04-13 22:51:26|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:51:26|INFO|Checking Moneycontrol Banking
+2025-04-13 22:51:27|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:51:27|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:51:27|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:51:27|INFO|Checking Mint Markets
+2025-04-13 22:51:27|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:51:27|INFO|Checking Mint Business
+2025-04-13 22:51:27|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:51:27|INFO|Checking Mint Industry
+2025-04-13 22:51:27|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:51:27|INFO|Checking Mint Money
+2025-04-13 22:51:27|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:51:27|INFO|Checking Mint Technology
+2025-04-13 22:51:28|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:51:28|INFO|Checking Mint AI
+2025-04-13 22:51:28|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:51:28|INFO|Checking Business Today
+2025-04-13 22:51:28|INFO|Found 0 new articles in Business Today
+2025-04-13 22:51:28|INFO|Finished! Total new articles: 0
+2025-04-13 22:51:28|INFO|
+2025-04-13 22:51:28|INFO|Next check at: 22:56:28
+2025-04-13 22:56:28|INFO|
+2025-04-13 22:56:28|INFO|Starting feed check
+2025-04-13 22:56:28|INFO|Checking Moneycontrol Latest
+2025-04-13 22:56:28|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 22:56:28|INFO|Checking Moneycontrol Business
+2025-04-13 22:56:28|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 22:56:28|INFO|Checking Moneycontrol Markets
+2025-04-13 22:56:28|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 22:56:28|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 22:56:29|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 22:56:29|INFO|Checking Moneycontrol IPO News
+2025-04-13 22:56:29|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 22:56:29|INFO|Checking Moneycontrol Commodities
+2025-04-13 22:56:30|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 22:56:30|INFO|Checking Moneycontrol Economy
+2025-04-13 22:56:30|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 22:56:30|INFO|Checking Moneycontrol Technology
+2025-04-13 22:56:30|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 22:56:30|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 22:56:31|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 22:56:31|INFO|Checking Moneycontrol International
+2025-04-13 22:56:31|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 22:56:31|INFO|Checking Moneycontrol Banking
+2025-04-13 22:56:31|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 22:56:31|INFO|Checking Moneycontrol Insurance
+2025-04-13 22:56:31|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 22:56:31|INFO|Checking Mint Markets
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint Markets
+2025-04-13 22:56:32|INFO|Checking Mint Business
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint Business
+2025-04-13 22:56:32|INFO|Checking Mint Industry
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint Industry
+2025-04-13 22:56:32|INFO|Checking Mint Money
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint Money
+2025-04-13 22:56:32|INFO|Checking Mint Technology
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint Technology
+2025-04-13 22:56:32|INFO|Checking Mint AI
+2025-04-13 22:56:32|INFO|Found 0 new articles in Mint AI
+2025-04-13 22:56:32|INFO|Checking Business Today
+2025-04-13 22:56:32|INFO|Found 0 new articles in Business Today
+2025-04-13 22:56:32|INFO|Finished! Total new articles: 0
+2025-04-13 22:56:32|INFO|
+2025-04-13 22:56:32|INFO|Next check at: 23:01:32
+2025-04-13 23:36:12|INFO|
+2025-04-13 23:36:12|INFO|Starting feed check
+2025-04-13 23:36:12|INFO|Checking Moneycontrol Latest
+2025-04-13 23:36:12|INFO|Found 0 new articles in Moneycontrol Latest
+2025-04-13 23:36:12|INFO|Checking Moneycontrol Business
+2025-04-13 23:36:12|INFO|Failed to parse Moneycontrol Business: 502 Server Error: Bad Gateway for url: https://www.moneycontrol.com/rss/business.xml
+2025-04-13 23:36:12|INFO|Checking Moneycontrol Markets
+2025-04-13 23:36:13|INFO|Found 0 new articles in Moneycontrol Markets
+2025-04-13 23:36:13|INFO|Checking Moneycontrol Personal Finance
+2025-04-13 23:36:13|INFO|Failed to parse Moneycontrol Personal Finance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/pfarticles.xml
+2025-04-13 23:36:13|INFO|Checking Moneycontrol IPO News
+2025-04-13 23:36:13|INFO|Found 0 new articles in Moneycontrol IPO News
+2025-04-13 23:36:13|INFO|Checking Moneycontrol Commodities
+2025-04-13 23:36:14|INFO|Found 0 new articles in Moneycontrol Commodities
+2025-04-13 23:36:14|INFO|Checking Moneycontrol Economy
+2025-04-13 23:36:14|INFO|Found 0 new articles in Moneycontrol Economy
+2025-04-13 23:36:14|INFO|Checking Moneycontrol Technology
+2025-04-13 23:36:15|INFO|Found 0 new articles in Moneycontrol Technology
+2025-04-13 23:36:15|INFO|Checking Moneycontrol Mutual Funds
+2025-04-13 23:36:15|INFO|Found 0 new articles in Moneycontrol Mutual Funds
+2025-04-13 23:36:15|INFO|Checking Moneycontrol International
+2025-04-13 23:36:15|INFO|Found 0 new articles in Moneycontrol International
+2025-04-13 23:36:15|INFO|Checking Moneycontrol Banking
+2025-04-13 23:36:16|INFO|Failed to parse Moneycontrol Banking: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/banking.xml
+2025-04-13 23:36:16|INFO|Checking Moneycontrol Insurance
+2025-04-13 23:36:16|INFO|Failed to parse Moneycontrol Insurance: 503 Server Error: Service Unavailable for url: https://www.moneycontrol.com/rss/insurance.xml
+2025-04-13 23:36:16|INFO|Checking Mint Markets
+2025-04-13 23:36:16|INFO|Found 1 new articles in Mint Markets
+2025-04-13 23:36:16|INFO|Database connection established!
+2025-04-13 23:36:16|INFO|Stored 1 articles successfully!
+2025-04-13 23:36:16|INFO|Checking Mint Business
+2025-04-13 23:36:17|INFO|Found 1 new articles in Mint Business
+2025-04-13 23:36:17|INFO|Database connection established!
+2025-04-13 23:36:17|INFO|Stored 1 articles successfully!
+2025-04-13 23:36:17|INFO|Checking Mint Industry
+2025-04-13 23:36:17|INFO|Found 0 new articles in Mint Industry
+2025-04-13 23:36:17|INFO|Checking Mint Money
+2025-04-13 23:36:18|INFO|Found 0 new articles in Mint Money
+2025-04-13 23:36:18|INFO|Checking Mint Technology
+2025-04-13 23:36:18|INFO|Found 0 new articles in Mint Technology
+2025-04-13 23:36:18|INFO|Checking Mint AI
+2025-04-13 23:36:20|INFO|Found 0 new articles in Mint AI
+2025-04-13 23:36:20|INFO|Checking Business Today
+2025-04-13 23:36:21|INFO|Found 0 new articles in Business Today
+2025-04-13 23:36:21|INFO|Finished! Total new articles: 2
+2025-04-13 23:36:21|INFO|
+2025-04-13 23:36:21|INFO|Next check at: 23:41:21

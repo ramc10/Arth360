@@ -19,7 +19,7 @@ DB_CONFIG = {
     'database': os.getenv('DB_NAME')
 }
 
-CSV_FILE = "/Users/ramcharan/Documents/Artha360/rss_feed/EQUITY_L.csv"
+CSV_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "EQUITY_L.csv")
 
 class StocksMonitor:
     def __init__(self):

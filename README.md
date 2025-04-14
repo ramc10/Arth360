@@ -1,4 +1,4 @@
-# RSS Feed Services
+# Arth360.Live
 
 This project consists of three main services that work together to fetch, process, and publish RSS feed content:
 

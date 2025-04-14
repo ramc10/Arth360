@@ -164,7 +164,7 @@ class TelegramPublisher:
                 response.raise_for_status()
                 return True
             except Exception as e:
-                self.logger.error(f"Failed to send image with caption: {str(e)}")
+                self.logger.error(f"Failed to send image with caption")
                 # Fall back to text-only if image send fails
                 return self.send_text_message(message)
         
@@ -188,7 +188,7 @@ class TelegramPublisher:
             response.raise_for_status()
             return True
         except Exception as e:
-            self.logger.error(f"Failed to send text message: {str(e)}")
+            self.logger.error(f"Failed to send text message")
             return False
 
     def mark_as_published(self, article_id):
@@ -206,7 +206,7 @@ class TelegramPublisher:
                 conn.commit()
                 return True
         except Exception as e:
-            self.logger.error(f"Failed to mark as published: {str(e)}")
+            self.logger.error(f"Failed to mark as published")
             conn.rollback()
             return False
         finally:
@@ -259,7 +259,7 @@ class TelegramPublisher:
         except KeyboardInterrupt:
             self.logger.info("Stopping publisher...")
         except Exception as e:
-            self.logger.error(f"Fatal error: {str(e)}")
+            self.logger.error(f"Fatal error")
 
 if __name__ == "__main__":
     publisher = TelegramPublisher()

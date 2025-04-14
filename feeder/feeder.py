@@ -13,7 +13,11 @@ import sys
 from dotenv import load_dotenv
 from logging.handlers import TimedRotatingFileHandler
 
-load_dotenv()
+# Load environment variables from base directory
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(base_dir, '.env'))
+
+# Database Configuration
 DB_CONFIG = {
     'host': os.getenv('DB_HOST'),
     'user': os.getenv('DB_USER'),
@@ -58,6 +62,7 @@ class RSSFeedMonitor:
         if self.logger.hasHandlers():
             self.logger.handlers.clear()
         
+        # File handler for log rotation
         file_handler = TimedRotatingFileHandler(
             os.path.join(log_dir, 'rss_monitor.log'),
             when='midnight',
@@ -69,31 +74,41 @@ class RSSFeedMonitor:
             datefmt='%Y-%m-%d %H:%M:%S'
         ))
         self.logger.addHandler(file_handler)
+        
+        # Console handler for screen output
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(logging.Formatter(
+            '%(asctime)s|%(levelname)s|%(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        ))
+        self.logger.addHandler(console_handler)
 
-    def log_console(self, emoji, message):
-        """Console logging with emojis"""
-        print(f"{datetime.now(IST).strftime('%H:%M:%S')} {emoji} {message}")
-        self.logger.info(message)
+    def log(self, emoji, message):
+        """Log messages with emoji"""
+        log_message = f"{emoji} {message}"
+        self.logger.info(log_message)
 
     def create_db_connection(self):
         """Create and return MySQL connection"""
         try:
             conn = mysql.connector.connect(**DB_CONFIG)
-            self.log_console("🛢️", "Database connection established!")
+            self.log("🛢️", "Database connection established!")
             return conn
         except Error as e:
-            self.log_console("🔥", f"Database connection error: {str(e)}")
+            self.log("🔥", f"Database connection error: {str(e)}")
             return None
 
     def create_tables(self):
         """Ensure required tables exist"""
         connection = self.create_db_connection()
         if not connection:
-            self.log_console("❌", "Couldn't connect to database")
+            self.log("❌", "Couldn't connect to database")
             return False
 
         try:
             cursor = connection.cursor()
+            
+            # Create feed_metadata table if it doesn't exist
             cursor.execute("""
             CREATE TABLE IF NOT EXISTS feed_metadata (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -106,11 +121,24 @@ class RSSFeedMonitor:
                 UNIQUE KEY unique_feed_item (url, source)
             )
             """)
+
+            # Create article_content table if it doesn't exist
+            cursor.execute("""
+            CREATE TABLE IF NOT EXISTS article_content (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                url_id INT NOT NULL,
+                summary TEXT,
+                top_image VARCHAR(512),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (url_id) REFERENCES feed_metadata(id)
+            )
+            """)
+            
             connection.commit()
-            self.log_console("🆕", "Database tables ready!")
+            self.log("🆕", "Database tables ready!")
             return True
         except Error as e:
-            self.log_console("💥", f"Error creating tables: {str(e)}")
+            self.log("💥", f"Error creating tables: {str(e)}")
             return False
         finally:
             if connection.is_connected():
@@ -120,7 +148,7 @@ class RSSFeedMonitor:
     def parse_feed(self, feed):
         """Parse a single feed and return entries from the last year"""
         try:
-            self.log_console("🔍", f"Checking {feed['name']}")
+            self.log("🔍", f"Checking {feed['name']}")
             
             response = requests.get(
                 feed['url'],
@@ -151,26 +179,26 @@ class RSSFeedMonitor:
                                     'source': feed['source']
                                 })
                 except Exception as e:
-                    self.log_console("⚠️", f"Skipping entry: {str(e)}")
+                    self.log("⚠️", f"Skipping entry: {str(e)}")
                     continue
             
             feed['last_checked'] = datetime.now(IST)
-            self.log_console("🎉", f"Found {len(new_entries)} new articles in {feed['name']}")
+            self.log("🎉", f"Found {len(new_entries)} new articles in {feed['name']}")
             return new_entries
             
         except Exception as e:
-            self.log_console("🔥", f"Failed to parse {feed['name']}: {str(e)}")
+            self.log("🔥", f"Failed to parse {feed['name']}: {str(e)}")
             return []
 
     def store_articles(self, articles):
         """Store articles in MySQL database with retry logic"""
         if not articles:
-            self.log_console("🤷", "No articles to store")
+            self.log("🤷", "No articles to store")
             return False
         
         connection = self.create_db_connection()
         if not connection:
-            self.log_console("🚫", "No database connection")
+            self.log("🚫", "No database connection")
             return False
 
         try:
@@ -190,11 +218,11 @@ class RSSFeedMonitor:
                 for article in articles
             ])
             connection.commit()
-            self.log_console("💾", f"Stored {len(articles)} articles successfully!")
+            self.log("💾", f"Stored {len(articles)} articles successfully!")
             return True
             
         except Error as e:
-            self.log_console("💥", f"Database error: {str(e)}")
+            self.log("🔥", f"Database error: {str(e)}")
             connection.rollback()
             return False
         finally:
@@ -204,8 +232,8 @@ class RSSFeedMonitor:
 
     def check_all_feeds(self):
         """Check all feeds and store new articles"""
-        self.log_console("\n" + "="*50, "")
-        self.log_console("🚀", "Starting feed check")
+        self.log("\n" + "="*50, "")
+        self.log("🚀", "Starting feed check")
         
         all_new_articles = []
         for feed in FEEDS:
@@ -214,28 +242,28 @@ class RSSFeedMonitor:
                 if self.store_articles(new_articles):
                     all_new_articles.extend(new_articles)
         
-        self.log_console("🌈", f"Finished! Total new articles: {len(all_new_articles)}")
-        self.log_console("="*50 + "\n", "")
+        self.log("🌈", f"Finished! Total new articles: {len(all_new_articles)}")
+        self.log("="*50 + "\n", "")
         return len(all_new_articles)
 
     def run_continuously(self):
         """Run the monitor continuously"""
-        self.log_console("📡", "RSS Feed Monitor started!")
-        self.log_console("⏰", f"Current IST: {datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S')}")
-        self.log_console("🔁", f"Checking feeds every {self.check_interval//60} minutes")
+        self.log("📡", "RSS Feed Monitor started!")
+        self.log("⏰", f"Current IST: {datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S')}")
+        self.log("🔁", f"Checking feeds every {self.check_interval//60} minutes")
         
         while self.running:
             try:
                 self.check_all_feeds()
                 next_check = datetime.now(IST) + timedelta(seconds=self.check_interval)
-                self.log_console("⏳", f"Next check at: {next_check.strftime('%H:%M:%S')}")
+                self.log("⏳", f"Next check at: {next_check.strftime('%H:%M:%S')}")
                 time.sleep(self.check_interval)
                 
             except KeyboardInterrupt:
-                self.log_console("\n🛑", "Stopping monitor...")
+                self.log("\n🛑", "Stopping monitor...")
                 self.running = False
             except Exception as e:
-                self.log_console("🔥", f"Unexpected error: {str(e)}")
+                self.log("🔥", f"Unexpected error: {str(e)}")
                 time.sleep(60)
 
 if __name__ == '__main__':

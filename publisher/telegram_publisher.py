@@ -6,9 +6,11 @@ import logging
 from dotenv import load_dotenv
 import time
 import html
+from logging.handlers import TimedRotatingFileHandler
 
-# Load environment variables
-load_dotenv()
+# Load environment variables from base directory
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(base_dir, '.env'))
 
 class TelegramPublisher:
     def __init__(self):
@@ -19,20 +21,43 @@ class TelegramPublisher:
         self.failed_articles = {}  # Track failed article attempts
 
     def setup_logger(self):
-        """Configure logging"""
+        """Setup logger with date-based file rotation"""
         self.logger = logging.getLogger('TelegramPublisher')
         self.logger.setLevel(logging.INFO)
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
         
-        # Console handler
-        ch = logging.StreamHandler()
-        ch.setFormatter(formatter)
-        self.logger.addHandler(ch)
+        log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+        os.makedirs(log_dir, exist_ok=True)
         
-        # File handler
-        fh = logging.FileHandler('rss_feed/logs/telegram_publisher.log')
-        fh.setFormatter(formatter)
-        self.logger.addHandler(fh)
+        if self.logger.hasHandlers():
+            self.logger.handlers.clear()
+        
+        # File handler for log rotation
+        file_handler = TimedRotatingFileHandler(
+            os.path.join(log_dir, 'telegram_publisher.log'),
+            when='midnight',
+            backupCount=7,
+            encoding='utf-8'
+        )
+        file_handler.setFormatter(logging.Formatter(
+            '%(asctime)s|%(levelname)s|%(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        ))
+        self.logger.addHandler(file_handler)
+        
+        # Console handler for screen output
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(logging.Formatter(
+            '%(asctime)s|%(levelname)s|%(message)s',
+            datefmt='%Y-%m-%d %H:%M:%S'
+        ))
+        self.logger.addHandler(console_handler)
+
+    def log(self, message, level='info'):
+        """Log messages"""
+        if level == 'info':
+            self.logger.info(message)
+        elif level == 'error':
+            self.logger.error(message)
 
     def load_config(self):
         """Load configuration from environment variables"""
@@ -52,13 +77,14 @@ class TelegramPublisher:
             raise ValueError("Telegram credentials not configured")
 
     def create_published_table(self):
-        """Ensure the published articles table exists"""
+        """Ensure all required tables exist"""
         conn = self.get_db_connection()
         if not conn:
             return False
 
         try:
             with conn.cursor() as cursor:
+                # Create telegram_published table
                 cursor.execute("""
                     CREATE TABLE IF NOT EXISTS telegram_published (
                         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -68,11 +94,13 @@ class TelegramPublisher:
                         UNIQUE KEY unique_article (article_id)
                     )
                 """)
+                self.logger.info("Created/verified telegram_published table")
+
                 conn.commit()
-                self.logger.info("Verified telegram_published table exists")
+                self.logger.info("All database tables verified")
             return True
         except Exception as e:
-            self.logger.error(f"Error creating table: {str(e)}")
+            self.logger.error(f"Error creating tables: {str(e)}")
             return False
         finally:
             if conn.is_connected():

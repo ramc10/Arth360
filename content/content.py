@@ -9,11 +9,11 @@ from dotenv import load_dotenv
 import logging
 import os
 from urllib.parse import urljoin
-from dotenv import load_dotenv
 from logging.handlers import TimedRotatingFileHandler
 
-# Load environment variables
-load_dotenv()
+# Load environment variables from base directory
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(base_dir, '.env'))
 
 # Database Configuration
 DB_CONFIG = {

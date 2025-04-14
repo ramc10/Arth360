@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: arth360-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - arth360-network
+
+  feeder:
+    build:
+      context: .
+      dockerfile: feeder/Dockerfile
+    container_name: arth360-feeder
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      - mysql
+    networks:
+      - arth360-network
+
+  content:
+    build:
+      context: .
+      dockerfile: content/Dockerfile
+    container_name: arth360-content
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      - mysql
+    networks:
+      - arth360-network
+
+  publisher:
+    build:
+      context: .
+      dockerfile: publisher/Dockerfile
+    container_name: arth360-publisher
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHANNEL_ID=${TELEGRAM_CHANNEL_ID}
+    depends_on:
+      - mysql
+    networks:
+      - arth360-network
+
+networks:
+  arth360-network:
+    driver: bridge
+
+volumes:
+  mysql_data: 

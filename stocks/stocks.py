@@ -10,7 +10,9 @@ from dotenv import load_dotenv
 import time
 from tqdm import tqdm
 
-load_dotenv()
+# Load environment variables from base directory
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(base_dir, '.env'))
 
 DB_CONFIG = {
     'host': os.getenv('DB_HOST'),

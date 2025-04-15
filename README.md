@@ -6,46 +6,91 @@ A news aggregation system that collects, processes, summarises and publishes new
 
 ## Architecture
 
-The system consists of several microservices:
+The system consists of several microservices working together to deliver news content:
 
-1. **Feeder Service**: Collects news articles from various RSS feeds
-2. **Content Service**: Processes and extracts content from collected articles
-3. **Publisher Service**: Publishes processed articles to a Telegram channel
-4. **Stocks Service**: Adhoc service for stock market data (runs on demand)
+### Core Services
 
-## Database Structure
+1. **Feeder Service**
+   - Collects news articles from various RSS feeds
+   - Stores basic article metadata in the database
+   - Runs continuously, checking for new articles
 
-### Tables
+2. **Content Service**
+   - Processes articles from the feeder service
+   - Extracts full content, images, and metadata
+   - Generates article summaries
+   - Stores processed content in the database
 
-1. **feed_metadata**
-   - `id`: Primary key
-   - `title`: Article title
-   - `description`: Article description
-   - `url`: Article URL
-   - `published_at`: Publication date
-   - `source`: News source
-   - `created_at`: Record creation timestamp
+3. **Publisher Service**
+   - Publishes processed articles to Telegram
+   - Tracks published articles to avoid duplicates
+   - Runs continuously, checking for new content to publish
 
-2. **article_content**
-   - `id`: Primary key
-   - `url_id`: Foreign key to feed_metadata
-   - `full_text`: Complete article text
-   - `cleaned_text`: Cleaned version of text
-   - `authors`: Article authors (JSON)
-   - `top_image`: Main article image URL
-   - `images`: Article images (JSON)
-   - `keywords`: Article keywords (JSON)
-   - `summary`: Article summary
-   - `created_at`: Record creation timestamp
+4. **Stocks Service** (On-Demand)
+   - Processes stock market data
+   - Runs only when triggered manually
+   - Uses the same database as other services
 
-3. **telegram_published**
-   - `id`: Primary key
-   - `article_id`: Foreign key to feed_metadata
-   - `published_at`: Publication timestamp
+### Database Structure
+
+The system uses MySQL with three main tables:
+- `feed_metadata`: Stores basic article information
+- `article_content`: Contains processed article content
+- `telegram_published`: Tracks published articles
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Docker and Docker Compose
+- Git
+
+### Installing Docker
+
+If you don't have Docker installed, follow these steps:
+
+#### For macOS:
+1. Download Docker Desktop for Mac from [Docker's official website](https://www.docker.com/products/docker-desktop)
+2. Install the downloaded package
+3. Start Docker Desktop from your Applications folder
+
+#### For Linux:
+```bash
+# Update package index
+sudo apt-get update
+
+# Install required packages
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+# Add Docker's official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Set up the stable repository
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Install Docker Engine
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# Install Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## Setup
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/arth360.git
+   cd arth360
+   ```
+
 2. Create a `.env` file with the following variables:
    ```
    DB_HOST=mysql
@@ -74,29 +119,6 @@ The system consists of several microservices:
    ./run_stocks.sh
    ```
 
-## Services
-
-### Feeder Service
-- Collects news articles from configured RSS feeds
-- Stores basic article metadata in `feed_metadata` table
-- Runs continuously, checking for new articles
-
-### Content Service
-- Processes articles from `feed_metadata`
-- Extracts full content, images, and metadata
-- Stores processed content in `article_content` table
-- Runs continuously, processing unprocessed articles
-
-### Publisher Service
-- Publishes processed articles to Telegram
-- Marks published articles in `telegram_published` table
-- Runs continuously, checking for new content to publish
-
-### Stocks Service
-- Runs on demand using `run_stocks.sh`
-- Processes stock market data
-- Connects to the same database as other services
-
 ## Monitoring
 
 Check service logs:
@@ -108,13 +130,6 @@ docker-compose logs -f
 docker-compose logs -f feeder
 docker-compose logs -f content
 docker-compose logs -f publisher
-```
-
-## Database Access
-
-Connect to MySQL:
-```bash
-docker exec -it arth360-mysql mysql -u root -p
 ```
 
 ## Troubleshooting

@@ -1,260 +1,459 @@
-# Arth360.Live
+# Arth360 - AI-Powered Financial News & Research Platform
 
 [![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](docker-compose.yml)
 
-Arth360 is a small microservice-based news aggregation system that collects, processes, summarises and publishes news articles (and optional stock data) to a Telegram channel.
+> Automated news aggregation and AI-powered research brief generation platform for financial markets.
 
-## Overview
+## 🎯 Overview
 
-The repo contains a set of services that work together:
+Arth360 is a microservices-based platform that collects financial news from multiple sources, processes it with AI, and generates comprehensive research briefs for tracked companies. The system runs continuously, aggregating news from Google News, RSS feeds, and delivering insights through Telegram.
 
-- `feeder/` — collects RSS feed metadata and stores it in the database
-- `content/` — fetches and processes full article content, extracts images, generates summaries
-- `publisher/` — publishes processed articles to Telegram and avoids duplicates
-- `stocks/` — optional on-demand stock data processing
-- `research-service/` — generates research briefs using an LLM (local LMStudio by default)
+### Key Features
 
-The project uses MySQL as the primary datastore (see `docker-compose.yml`).
+- 📰 **Multi-Source News Aggregation** - Collects from 25+ RSS feeds (Google News, Moneycontrol, Economic Times)
+- 🤖 **AI-Powered Analysis** - Uses local LLM (Llama 3.1) to summarize and analyze articles
+- 📊 **Real-Time Financial Data** - Integrates live stock data via yfinance
+- 🔍 **Automated Research Briefs** - Generates daily company research with sentiment analysis
+- 📱 **Telegram Publishing** - Auto-publishes curated content to Telegram channels
+- 🐳 **Fully Containerized** - Docker-based deployment for easy scaling
 
-## Quickstart (Docker)
+## 🏗️ Architecture
 
-These instructions get the system up quickly using Docker Compose.
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Feeder    │────▶│   Content   │────▶│  Publisher  │────▶│  Telegram   │
+│  (RSS Feed) │     │ (Processor) │     │   (Output)  │     │   Channel   │
+└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
+       │                    │                                        
+       │                    │                                        
+       ▼                    ▼                                        
+┌─────────────────────────────────┐     ┌─────────────┐
+│         MySQL Database          │◀────│  Research   │
+│  (Articles, Briefs, Tracking)   │     │  Service    │
+└─────────────────────────────────┘     └─────────────┘
+                                               ▲
+                                               │
+                                        ┌─────────────┐
+                                        │  LMStudio   │
+                                        │ (Local LLM) │
+                                        └─────────────┘
+```
 
-Prerequisites:
+## 🚀 Quick Start
 
-- Docker Desktop (macOS) or Docker Engine + docker-compose (Linux)
-- Git
+### Prerequisites
 
-1. Clone the repo and change directory:
+- **Docker Desktop** (macOS/Windows) or **Docker Engine + docker-compose** (Linux)
+- **LMStudio** (for AI analysis) - [Download](https://lmstudio.ai)
+- **Git**
+- **MySQL Client** (optional, for database access) - [DBeaver](https://dbeaver.io) recommended
+
+### Installation
+
+**1. Clone the repository:**
 
 ```bash
 git clone https://github.com/ramc10/Arth360.git
 cd Arth360
 ```
 
-2. Create a `.env` file in the repo root (example values):
+**2. Create environment configuration:**
 
-```env
+```bash
+# Copy example environment file
+cat > .env << 'EOF'
+# Database Configuration
 DB_HOST=mysql
 DB_USER=root
-DB_PASSWORD=your_password
+DB_PASSWORD=your_secure_password
 DB_NAME=rss_reader
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHANNEL_ID=@your_channel_or_id
-LMSTUDIO_URL=http://host.docker.internal:1234
+
+# Telegram Configuration (optional)
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHANNEL_ID=@your_channel_id
+
+# LMStudio Configuration
+LMSTUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
+EOF
 ```
 
-3. Build the base image (first-time only) and start services:
+**3. Start LMStudio (Required for AI analysis):**
+
+- Open LMStudio
+- Load model: `llama-3.1-8b-instruct`
+- Start server on port `1234`
+- Verify: `curl http://localhost:1234/v1/models`
+
+**4. Build and start services:**
 
 ```bash
-# build the base image used by several services
+# Build base image
 docker build -t arth360-base:latest -f Dockerfile.base .
 
-# start services in background
+# Start all services
 docker-compose up -d
+
+# Verify services are running
+docker-compose ps
 ```
 
-4. Check logs to verify services started correctly:
+**5. Initialize database and add companies to track:**
+
+```sql
+-- Connect to MySQL (localhost:3306)
+-- User: root, Password: <your_password>, Database: rss_reader
+
+-- Add companies to your watchlist
+INSERT INTO user_watchlist (user_id, company_symbol, company_name) VALUES
+(1, 'AAPL', 'Apple Inc.'),
+(1, 'TSLA', 'Tesla Inc.'),
+(1, 'NVDA', 'NVIDIA Corporation'),
+(1, 'MSFT', 'Microsoft Corporation'),
+(1, 'GOOGL', 'Alphabet Inc.');
+```
+
+**6. Monitor the system:**
 
 ```bash
+# View all logs
 docker-compose logs -f
+
+# View specific service
+docker-compose logs -f research
 docker-compose logs -f feeder
+
+# Check research briefs in database
+# Connect via DBeaver and query: SELECT * FROM research_briefs;
 ```
 
-## Running services locally (without Docker)
+## 📦 Services
 
-You can run individual Python services locally for development. Example for the research service:
+### 1. Feeder Service
+**Collects news from RSS feeds**
 
-```bash
-# from the repo root
-# Arth360.Live
+- Checks 25+ configured RSS feeds every 5 minutes
+- Stores article metadata (title, URL, description, published date)
+- Handles duplicates and rate limiting
+- Sources: Google News (company-specific), Moneycontrol, Economic Times, Mint
 
-[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+**Configuration:** `config.json`
 
-Arth360 is a small microservice-based news aggregation system that collects, processes, summarises and publishes news articles (and optional stock data) to a Telegram channel.
+### 2. Content Service
+**Processes and enriches articles**
 
-## Overview
+- Extracts full article content from URLs
+- Cleans and formats text
+- Extracts images and metadata
+- Generates article summaries
+- Stores processed content in database
 
-The repo contains a set of services that work together:
+### 3. Publisher Service
+**Publishes to Telegram**
 
-- `feeder/` — collects RSS feed metadata and stores it in the database
-- `content/` — fetches and processes full article content, extracts images, generates summaries
-- `publisher/` — publishes processed articles to Telegram and avoids duplicates
-- `stocks/` — optional on-demand stock data processing
-- `research-service/` — generates research briefs using an LLM (local LMStudio by default)
+- Monitors database for new processed articles
+- Formats messages with images and summaries
+- Publishes to configured Telegram channel
+- Tracks published articles to avoid duplicates
 
-The project uses MySQL as the primary datastore (see `docker-compose.yml`).
+### 4. Research Service
+**AI-powered research brief generation**
 
-## Quickstart (Docker)
+- Runs every hour (configurable)
+- Finds articles matching watchlist companies
+- Analyzes articles using local LLM (Llama 3.1)
+- Fetches real-time stock data (price, volume, P/E ratio)
+- Generates comprehensive research briefs
+- Saves to database with JSON analysis
 
-These instructions get the system up quickly using Docker Compose.
+**Brief includes:**
+- AI-generated article summaries
+- Sentiment analysis (Positive/Negative/Neutral)
+- Financial impact assessment
+- Real-time stock metrics
+- Links to original sources
 
-Prerequisites:
+## 💻 Local Development
 
-- Docker Desktop (macOS) or Docker Engine + docker-compose (Linux)
-- Git
+### Running Services Locally
 
-1. Clone the repo and change directory:
-
-```bash
-git clone https://github.com/ramc10/Arth360.git
-cd Arth360
-```
-
-2. Create a `.env` file in the repo root (example values):
-
-```env
-DB_HOST=mysql
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=rss_reader
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHANNEL_ID=@your_channel_or_id
-LMSTUDIO_URL=http://host.docker.internal:1234
-```
-
-3. Build the base image (first-time only) and start services:
-
-```bash
-# build the base image used by several services
-docker build -t arth360-base:latest -f Dockerfile.base .
-
-# start services in background
-docker-compose up -d
-```
-
-4. Check logs to verify services started correctly:
-
-```bash
-docker-compose logs -f
-docker-compose logs -f feeder
-```
-
-## Running services locally (without Docker)
-
-You can run individual Python services locally for development. Example for the research service:
-
-```bash
-# from the repo root
-# Arth360.Live
-
-[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
-
-Arth360 is a lightweight microservice-based news aggregation system. It collects RSS content, processes and summarises articles, optionally enriches with stock data, and publishes to a Telegram channel.
-
-## Contents
-
-- `feeder/` — collects RSS feed metadata and stores it in the DB
-- `content/` — fetches full article content, extracts images/metadata and generates summaries
-- `publisher/` — publishes articles to Telegram and avoids duplicates
-- `stocks/` — on-demand stock data processing and scripts
-- `research-service/` — generates research briefs using an LLM (LMStudio by default)
-
-See `docker-compose.yml` for how services are wired together.
-
-## Quickstart (Docker)
-
-Prerequisites: Docker Desktop (macOS) or Docker Engine + docker-compose (Linux) and Git.
-
-1. Clone and enter the repository:
-
-```bash
-git clone https://github.com/ramc10/Arth360.git
-cd Arth360
-```
-
-2. Create a `.env` file in the repo root (example):
-
-```env
-DB_HOST=mysql
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=rss_reader
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHANNEL_ID=@your_channel_or_id
-LMSTUDIO_URL=http://host.docker.internal:1234
-```
-
-3. Build base image (first time) and start services:
-
-```bash
-docker build -t arth360-base:latest -f Dockerfile.base .
-docker-compose up -d
-```
-
-4. Check logs:
-
-```bash
-docker-compose logs -f
-docker-compose logs -f feeder
-```
-
-## Running a single service locally (example: research-service)
-
-You can run services locally for development. Example for `research-service`:
+**Research Service:**
 
 ```bash
 cd research-service
-python3 -m venv .venv
-source .venv/bin/activate
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 
-# set env vars (example)
+# Set environment variables
 export DB_HOST=localhost
 export DB_USER=root
 export DB_PASSWORD=your_password
 export DB_NAME=rss_reader
-export LMSTUDIO_URL=http://localhost:1234
+export LMSTUDIO_URL=http://localhost:1234/v1/chat/completions
 
+# Run service
 python app.py
 ```
 
-Notes:
-- `research-service/app.py` expects a MySQL database and optionally an LMStudio-compatible endpoint for summarization. If LMStudio is not reachable, the service will continue but summaries will fail.
-- `stocks/` scripts depend on `yfinance` and other packages — see `stocks/` and `requirements.txt`.
+**Feeder Service:**
 
-## Environment variables
+```bash
+cd feeder
+python3 -m venv venv
+source venv/bin/activate
+pip install -r ../requirements.txt
 
-Core environment variables (put in `.env`):
+export DB_HOST=localhost
+export DB_USER=root
+export DB_PASSWORD=your_password
+export DB_NAME=rss_reader
 
-- DB_HOST, DB_USER, DB_PASSWORD, DB_NAME — MySQL connection details
-- TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID — credentials for publishing
-- LMSTUDIO_URL — (optional) LMStudio API base URL (e.g. `http://host.docker.internal:1234`)
+python feeder.py
+```
 
-Each service may accept additional variables — check the service folders for specifics.
+## 🗄️ Database Schema
 
-## Database (high level)
+### Core Tables
 
-Important tables used by the services:
+**feed_metadata**
+```sql
+- id: INT (Primary Key)
+- url: TEXT (Article URL)
+- title: VARCHAR(500)
+- description: TEXT
+- published_at: DATETIME
+- source: VARCHAR(100) (Feed identifier)
+- fetched_at: TIMESTAMP
+```
 
-- `feed_metadata` — article metadata (title, url, published_at, description)
-- `article_content` — processed/cleaned content and extracted data
-- `telegram_published` — records of published items to avoid duplicates
-- `research_briefs` — generated briefs from `research-service`
+**article_content**
+```sql
+- id: INT (Primary Key)
+- url_id: INT (Foreign Key → feed_metadata.id)
+- cleaned_text: LONGTEXT (Full article content)
+- summary: TEXT (Auto-generated summary)
+- images: JSON (Extracted images)
+- processed_at: TIMESTAMP
+```
 
-If you need schema SQL or migrations, let me know and I can add sample DDL or migration scripts.
+**research_briefs**
+```sql
+- id: INT (Primary Key)
+- user_id: INT
+- company_symbol: VARCHAR(10)
+- brief_date: DATE
+- news_summary: JSON (AI-analyzed articles)
+- financial_data: JSON (Stock metrics)
+- articles_analyzed: INT
+- generated_at: TIMESTAMP
+```
 
-## Troubleshooting
+**user_watchlist**
+```sql
+- id: INT (Primary Key)
+- user_id: INT
+- company_symbol: VARCHAR(10)
+- company_name: VARCHAR(200)
+- created_at: TIMESTAMP
+```
 
-- Check container logs: `docker-compose logs -f <service>`
-- If running locally, watch stdout from the Python process
-- Verify DB connectivity and credentials
-- If LLM requests fail, confirm `LMSTUDIO_URL` and that LMStudio/model is running
+**telegram_published**
+```sql
+- id: INT (Primary Key)
+- feed_id: INT (Foreign Key → feed_metadata.id)
+- published_at: TIMESTAMP
+```
 
-## Project layout (top-level)
+## ⚙️ Configuration
 
-- `docker-compose.yml`, `Dockerfile.base` — docker configuration
-- `feeder/`, `content/`, `publisher/`, `stocks/`, `research-service/` — services
-- `requirements.txt` — root Python deps used for some scripts
+### Environment Variables
 
-## Contributing / Next steps
+| Variable | Description | Default | Required |
+|----------|-------------|---------|----------|
+| `DB_HOST` | MySQL hostname | `mysql` | Yes |
+| `DB_USER` | Database user | `root` | Yes |
+| `DB_PASSWORD` | Database password | - | Yes |
+| `DB_NAME` | Database name | `rss_reader` | Yes |
+| `TELEGRAM_BOT_TOKEN` | Telegram bot token | - | Optional |
+| `TELEGRAM_CHANNEL_ID` | Telegram channel ID | - | Optional |
+| `LMSTUDIO_URL` | LMStudio API endpoint | `http://host.docker.internal:1234/v1/chat/completions` | Yes |
 
-- Add a `.env.example` file with the variables above
-- Add `RUNNING.md` with step-by-step instructions for each service
-- Provide SQL schema or migration scripts for the MySQL schema
+### RSS Feed Configuration
 
-If you'd like, I can create `.env.example` and `RUNNING.md` next.
+Edit `config.json` to add/remove news sources:
 
-## License
+```json
+{
+  "feeds": [
+    {
+      "name": "Google News - Apple Inc",
+      "url": "https://news.google.com/rss/search?q=Apple+Inc+OR+AAPL",
+      "source": "google-aapl",
+      "headers": {"User-Agent": "Mozilla/5.0"},
+      "last_checked": null
+    }
+  ]
+}
+```
 
-See the included `LICENSE` file for license terms.
+### Research Service Schedule
+
+**Modify `app.py` for different schedules:**
+
+```python
+# Current: Every 1 hour
+time.sleep(3600)
+
+# Every 30 minutes
+time.sleep(1800)
+
+# Every 6 hours
+time.sleep(21600)
+```
+
+## 🔍 Viewing Research Briefs
+
+### In DBeaver/MySQL
+
+```sql
+-- Latest briefs for all companies
+SELECT 
+    company_symbol,
+    brief_date,
+    articles_analyzed,
+    JSON_EXTRACT(financial_data, '$.price') as price,
+    JSON_EXTRACT(financial_data, '$.change_percent') as change_pct,
+    generated_at
+FROM research_briefs
+ORDER BY generated_at DESC
+LIMIT 10;
+
+-- Full brief for specific company
+SELECT 
+    company_symbol,
+    JSON_PRETTY(news_summary) as ai_analysis,
+    JSON_PRETTY(financial_data) as stock_data
+FROM research_briefs
+WHERE company_symbol = 'AAPL'
+ORDER BY generated_at DESC
+LIMIT 1;
+
+-- Today's briefs
+SELECT * FROM research_briefs
+WHERE brief_date = CURDATE();
+```
+
+## 🐛 Troubleshooting
+
+### Services won't start
+
+```bash
+# Check logs
+docker-compose logs [service_name]
+
+# Verify MySQL is healthy
+docker-compose ps mysql
+
+# Restart specific service
+docker-compose restart [service_name]
+```
+
+### Research service not generating briefs
+
+```bash
+# Check if articles exist for your companies
+SELECT COUNT(*) FROM feed_metadata 
+WHERE title LIKE '%Apple%' OR title LIKE '%AAPL%';
+
+# Verify LMStudio is running
+curl http://localhost:1234/v1/models
+
+# Check research service logs
+docker-compose logs -f research
+```
+
+### Database connection errors
+
+```bash
+# Verify .env file exists and has correct credentials
+cat .env
+
+# Test MySQL connection
+docker exec -it arth360-mysql mysql -uroot -p
+
+# Check if database exists
+SHOW DATABASES;
+USE rss_reader;
+SHOW TABLES;
+```
+
+### URL too long errors (Google News)
+
+```sql
+-- Increase URL column size
+ALTER TABLE feed_metadata DROP INDEX unique_feed_item;
+ALTER TABLE feed_metadata MODIFY COLUMN url TEXT;
+ALTER TABLE feed_metadata ADD INDEX idx_url (url(255));
+```
+
+## 📁 Project Structure
+
+```
+Arth360/
+├── feeder/
+│   ├── Dockerfile
+│   └── feeder.py           # RSS feed collector
+├── content/
+│   ├── Dockerfile
+│   └── content.py          # Article processor
+├── publisher/
+│   ├── Dockerfile
+│   └── telegram_publisher.py
+├── research-service/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── app.py              # AI research brief generator
+├── stocks/
+│   └── stock_scripts.py    # Stock data utilities
+├── config.json             # RSS feed configuration
+├── docker-compose.yml      # Service orchestration
+├── Dockerfile.base         # Base Python image
+├── requirements.txt        # Root dependencies
+├── .env                    # Environment variables (create this)
+├── .gitignore
+└── README.md
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [LMStudio](https://lmstudio.ai) - Local LLM inference
+- [yfinance](https://github.com/ranaroussi/yfinance) - Stock market data
+- [feedparser](https://github.com/kurtmckee/feedparser) - RSS feed parsing
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - Web scraping
+
+## 📞 Support
+
+- **Telegram Channel:** [@artha360](https://t.me/artha360)
+- **Issues:** [GitHub Issues](https://github.com/ramc10/Arth360/issues)
+
+---
+
+**Built with ❤️ for the financial research community**

@@ -89,6 +89,25 @@ services:
     networks:
       - arth360-network
 
+  research-publisher:
+    build:
+      context: .
+      dockerfile: research-publisher/Dockerfile
+    container_name: arth360-research-publisher
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHANNEL_ID=${TELEGRAM_CHANNEL_ID}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - arth360-network
+    restart: unless-stopped
+
 networks:
   arth360-network:
     driver: bridge

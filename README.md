@@ -174,6 +174,24 @@ docker-compose logs -f feeder
 - Real-time stock metrics
 - Links to original sources
 
+### 5. Research Publisher Service
+**Publishes research briefs to Telegram**
+
+- Monitors `research_briefs` table for unpublished briefs
+- Formats rich HTML messages with stock data and news
+- Runs every 30 minutes (configurable)
+- Includes sentiment indicators (🟢 Positive, 🔴 Negative, ⚪ Neutral)
+- Shows price movements, market cap, P/E ratios
+- Tracks published briefs to prevent duplicates
+
+**Published message includes:**
+- Company name and symbol
+- Stock price and % change
+- Market cap, P/E ratio, 52-week range
+- Top 3 news articles with AI analysis
+- Sentiment indicators
+- Timestamp and source attribution
+
 ## 💻 Local Development
 
 ### Running Services Locally

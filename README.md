@@ -46,100 +46,263 @@ Before you begin, ensure you have the following installed:
 
 ### Installing Docker
 
-If you don't have Docker installed, follow these steps:
+# Arth360.Live
 
-#### For macOS:
-1. Download Docker Desktop for Mac from [Docker's official website](https://www.docker.com/products/docker-desktop)
-2. Install the downloaded package
-3. Start Docker Desktop from your Applications folder
+[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
 
-#### For Linux:
+Arth360 is a small microservice-based news aggregation system that collects, processes, summarises and publishes news articles (and optional stock data) to a Telegram channel.
+
+## Overview
+
+The repo contains a set of services that work together:
+
+- `feeder/` — collects RSS feed metadata and stores it in the database
+- `content/` — fetches and processes full article content, extracts images, generates summaries
+- `publisher/` — publishes processed articles to Telegram and avoids duplicates
+- `stocks/` — optional on-demand stock data processing
+- `research-service/` — generates research briefs using an LLM (local LMStudio by default)
+
+The project uses MySQL as the primary datastore (see `docker-compose.yml`).
+
+## Quickstart (Docker)
+
+These instructions get the system up quickly using Docker Compose.
+
+Prerequisites:
+
+- Docker Desktop (macOS) or Docker Engine + docker-compose (Linux)
+- Git
+
+1. Clone the repo and change directory:
+
 ```bash
-# Update package index
-sudo apt-get update
-
-# Install required packages
-sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-
-# Add Docker's official GPG key
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
-# Set up the stable repository
-echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-# Install Docker Engine
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
-
-# Install Docker Compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
+git clone https://github.com/ramc10/Arth360.git
+cd Arth360
 ```
 
-## Setup
+2. Create a `.env` file in the repo root (example values):
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/arth360.git
-   cd arth360
-   ```
+```env
+DB_HOST=mysql
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=rss_reader
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHANNEL_ID=@your_channel_or_id
+LMSTUDIO_URL=http://host.docker.internal:1234
+```
 
-2. Create a `.env` file with the following variables:
-   ```
-   DB_HOST=mysql
-   DB_USER=root
-   DB_PASSWORD=your_password
-   DB_NAME=rss_reader
-   TELEGRAM_BOT_TOKEN=your_bot_token
-   TELEGRAM_CHANNEL_ID=your_channel_id
-   ```
+3. Build the base image (first-time only) and start services:
 
-3. Build and start the services:
-   ```bash
-   # Build the base image
-   docker build -t arth360-base:latest -f Dockerfile.base .
-
-   # Start the main services
-   docker-compose up -d
-   ```
-
-4. To run the stocks service adhoc:
-   ```bash
-   # Make the script executable
-   chmod +x run_stocks.sh
-
-   # Run the stocks service
-   ./run_stocks.sh
-   ```
-
-## Monitoring
-
-Check service logs:
 ```bash
-# View all logs
+# build the base image used by several services
+docker build -t arth360-base:latest -f Dockerfile.base .
+
+# start services in background
+docker-compose up -d
+```
+
+4. Check logs to verify services started correctly:
+
+```bash
 docker-compose logs -f
-
-# View specific service logs
 docker-compose logs -f feeder
-docker-compose logs -f content
-docker-compose logs -f publisher
 ```
+
+## Running services locally (without Docker)
+
+You can run individual Python services locally for development. Example for the research service:
+
+```bash
+# from the repo root
+# Arth360.Live
+
+[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+
+Arth360 is a small microservice-based news aggregation system that collects, processes, summarises and publishes news articles (and optional stock data) to a Telegram channel.
+
+## Overview
+
+The repo contains a set of services that work together:
+
+- `feeder/` — collects RSS feed metadata and stores it in the database
+- `content/` — fetches and processes full article content, extracts images, generates summaries
+- `publisher/` — publishes processed articles to Telegram and avoids duplicates
+- `stocks/` — optional on-demand stock data processing
+- `research-service/` — generates research briefs using an LLM (local LMStudio by default)
+
+The project uses MySQL as the primary datastore (see `docker-compose.yml`).
+
+## Quickstart (Docker)
+
+These instructions get the system up quickly using Docker Compose.
+
+Prerequisites:
+
+- Docker Desktop (macOS) or Docker Engine + docker-compose (Linux)
+- Git
+
+1. Clone the repo and change directory:
+
+```bash
+git clone https://github.com/ramc10/Arth360.git
+cd Arth360
+```
+
+2. Create a `.env` file in the repo root (example values):
+
+```env
+DB_HOST=mysql
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=rss_reader
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHANNEL_ID=@your_channel_or_id
+LMSTUDIO_URL=http://host.docker.internal:1234
+```
+
+3. Build the base image (first-time only) and start services:
+
+```bash
+# build the base image used by several services
+docker build -t arth360-base:latest -f Dockerfile.base .
+
+# start services in background
+docker-compose up -d
+```
+
+4. Check logs to verify services started correctly:
+
+```bash
+docker-compose logs -f
+docker-compose logs -f feeder
+```
+
+## Running services locally (without Docker)
+
+You can run individual Python services locally for development. Example for the research service:
+
+```bash
+# from the repo root
+# Arth360.Live
+
+[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
+
+Arth360 is a lightweight microservice-based news aggregation system. It collects RSS content, processes and summarises articles, optionally enriches with stock data, and publishes to a Telegram channel.
+
+## Contents
+
+- `feeder/` — collects RSS feed metadata and stores it in the DB
+- `content/` — fetches full article content, extracts images/metadata and generates summaries
+- `publisher/` — publishes articles to Telegram and avoids duplicates
+- `stocks/` — on-demand stock data processing and scripts
+- `research-service/` — generates research briefs using an LLM (LMStudio by default)
+
+See `docker-compose.yml` for how services are wired together.
+
+## Quickstart (Docker)
+
+Prerequisites: Docker Desktop (macOS) or Docker Engine + docker-compose (Linux) and Git.
+
+1. Clone and enter the repository:
+
+```bash
+git clone https://github.com/ramc10/Arth360.git
+cd Arth360
+```
+
+2. Create a `.env` file in the repo root (example):
+
+```env
+DB_HOST=mysql
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=rss_reader
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHANNEL_ID=@your_channel_or_id
+LMSTUDIO_URL=http://host.docker.internal:1234
+```
+
+3. Build base image (first time) and start services:
+
+```bash
+docker build -t arth360-base:latest -f Dockerfile.base .
+docker-compose up -d
+```
+
+4. Check logs:
+
+```bash
+docker-compose logs -f
+docker-compose logs -f feeder
+```
+
+## Running a single service locally (example: research-service)
+
+You can run services locally for development. Example for `research-service`:
+
+```bash
+cd research-service
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# set env vars (example)
+export DB_HOST=localhost
+export DB_USER=root
+export DB_PASSWORD=your_password
+export DB_NAME=rss_reader
+export LMSTUDIO_URL=http://localhost:1234
+
+python app.py
+```
+
+Notes:
+- `research-service/app.py` expects a MySQL database and optionally an LMStudio-compatible endpoint for summarization. If LMStudio is not reachable, the service will continue but summaries will fail.
+- `stocks/` scripts depend on `yfinance` and other packages — see `stocks/` and `requirements.txt`.
+
+## Environment variables
+
+Core environment variables (put in `.env`):
+
+- DB_HOST, DB_USER, DB_PASSWORD, DB_NAME — MySQL connection details
+- TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID — credentials for publishing
+- LMSTUDIO_URL — (optional) LMStudio API base URL (e.g. `http://host.docker.internal:1234`)
+
+Each service may accept additional variables — check the service folders for specifics.
+
+## Database (high level)
+
+Important tables used by the services:
+
+- `feed_metadata` — article metadata (title, url, published_at, description)
+- `article_content` — processed/cleaned content and extracted data
+- `telegram_published` — records of published items to avoid duplicates
+- `research_briefs` — generated briefs from `research-service`
+
+If you need schema SQL or migrations, let me know and I can add sample DDL or migration scripts.
 
 ## Troubleshooting
 
-If you encounter issues:
-1. Check service logs for errors
-2. Verify database tables exist and have correct structure
-3. Ensure environment variables are set correctly
-4. Try rebuilding containers if changes were made:
-   ```bash
-   docker-compose build <service_name>
-   docker-compose up -d <service_name>
-   ```
+- Check container logs: `docker-compose logs -f <service>`
+- If running locally, watch stdout from the Python process
+- Verify DB connectivity and credentials
+- If LLM requests fail, confirm `LMSTUDIO_URL` and that LMStudio/model is running
+
+## Project layout (top-level)
+
+- `docker-compose.yml`, `Dockerfile.base` — docker configuration
+- `feeder/`, `content/`, `publisher/`, `stocks/`, `research-service/` — services
+- `requirements.txt` — root Python deps used for some scripts
+
+## Contributing / Next steps
+
+- Add a `.env.example` file with the variables above
+- Add `RUNNING.md` with step-by-step instructions for each service
+- Provide SQL schema or migration scripts for the MySQL schema
+
+If you'd like, I can create `.env.example` and `RUNNING.md` next.
+
+## License
+
+See the included `LICENSE` file for license terms.

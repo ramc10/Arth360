@@ -63,6 +63,18 @@ services:
     networks:
       - arth360-network
 
+  research:
+    build: ./research-service
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    networks:
+      - arth360-network
+
 networks:
   arth360-network:
     driver: bridge

@@ -1,6 +1,193 @@
 {
     "feeds": [
       {
+        "name": "Google News - Apple Inc",
+        "url": "https://news.google.com/rss/search?q=Apple+Inc+OR+AAPL+stock+OR+Apple+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-aapl",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Tesla",
+        "url": "https://news.google.com/rss/search?q=Tesla+OR+TSLA+stock+OR+Tesla+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-tsla",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - NVIDIA",
+        "url": "https://news.google.com/rss/search?q=NVIDIA+OR+NVDA+stock+OR+NVIDIA+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-nvda",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Microsoft",
+        "url": "https://news.google.com/rss/search?q=Microsoft+OR+MSFT+stock+OR+Microsoft+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-msft",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Amazon",
+        "url": "https://news.google.com/rss/search?q=Amazon+OR+AMZN+stock+OR+Amazon+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-amzn",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Google/Alphabet",
+        "url": "https://news.google.com/rss/search?q=Alphabet+OR+GOOGL+stock+OR+Google+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-googl",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Meta",
+        "url": "https://news.google.com/rss/search?q=Meta+OR+META+stock+OR+Facebook+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-meta",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Netflix",
+        "url": "https://news.google.com/rss/search?q=Netflix+OR+NFLX+stock+OR+Netflix+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-nflx",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      
+      {
+        "name": "Google News - Stock Market",
+        "url": "https://news.google.com/rss/search?q=stock+market+news&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-market",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Wall Street",
+        "url": "https://news.google.com/rss/search?q=Wall+Street+OR+NYSE+OR+NASDAQ&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-wallstreet",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - IPO",
+        "url": "https://news.google.com/rss/search?q=IPO+OR+initial+public+offering&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-ipo",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Earnings",
+        "url": "https://news.google.com/rss/search?q=earnings+report+OR+quarterly+earnings&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-earnings",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Federal Reserve",
+        "url": "https://news.google.com/rss/search?q=Federal+Reserve+OR+interest+rates+OR+Fed&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-fed",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      
+      {
+        "name": "Google News - AI Tech",
+        "url": "https://news.google.com/rss/search?q=artificial+intelligence+OR+AI+technology&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-ai",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Semiconductors",
+        "url": "https://news.google.com/rss/search?q=semiconductor+OR+chip+industry&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-semiconductors",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Electric Vehicles",
+        "url": "https://news.google.com/rss/search?q=electric+vehicles+OR+EV+industry&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-ev",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Crypto",
+        "url": "https://news.google.com/rss/search?q=cryptocurrency+OR+bitcoin+OR+crypto+market&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-crypto",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      
+      {
+        "name": "Google News - India Business",
+        "url": "https://news.google.com/rss/search?q=India+business+OR+Indian+economy&hl=en-IN&gl=IN&ceid=IN:en",
+        "source": "google-india-biz",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - India Stock Market",
+        "url": "https://news.google.com/rss/search?q=BSE+OR+NSE+OR+Sensex+OR+Nifty&hl=en-IN&gl=IN&ceid=IN:en",
+        "source": "google-india-market",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Indian Startups",
+        "url": "https://news.google.com/rss/search?q=Indian+startups+OR+India+unicorn&hl=en-IN&gl=IN&ceid=IN:en",
+        "source": "google-india-startups",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      
+      {
+        "name": "Google News - Mergers Acquisitions",
+        "url": "https://news.google.com/rss/search?q=merger+OR+acquisition+OR+M%26A&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-ma",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Venture Capital",
+        "url": "https://news.google.com/rss/search?q=venture+capital+OR+funding+round&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-vc",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Tech Layoffs",
+        "url": "https://news.google.com/rss/search?q=tech+layoffs+OR+job+cuts&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-layoffs",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      
+      {
+        "name": "Google News - Banking",
+        "url": "https://news.google.com/rss/search?q=banking+sector+OR+bank+news&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-banking",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Real Estate",
+        "url": "https://news.google.com/rss/search?q=real+estate+market+OR+housing&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-realestate",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
+        "name": "Google News - Energy Sector",
+        "url": "https://news.google.com/rss/search?q=energy+sector+OR+oil+prices&hl=en-US&gl=US&ceid=US:en",
+        "source": "google-energy",
+        "headers": {"User-Agent": "Mozilla/5.0"},
+        "last_checked": null
+      },
+      {
         "name": "Moneycontrol Latest",
         "url": "https://www.moneycontrol.com/rss/latestnews.xml",
         "source": "moneycontrol-latest",

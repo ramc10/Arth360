@@ -1,6 +1,46 @@
-.DS_Store
-*.swp
-.idea/
-node_modules/
-*.log
+# Environment variables (NEVER commit these!)
+.env
 *.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Docker
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp

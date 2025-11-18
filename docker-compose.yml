@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mysql:
     image: mysql:8.0
@@ -15,6 +13,12 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - arth360-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_PASSWORD}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
 
   feeder:
     build:
@@ -27,9 +31,11 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     networks:
       - arth360-network
+    restart: unless-stopped
 
   content:
     build:
@@ -42,9 +48,11 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     networks:
       - arth360-network
+    restart: unless-stopped
 
   publisher:
     build:
@@ -59,19 +67,25 @@ services:
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - TELEGRAM_CHANNEL_ID=${TELEGRAM_CHANNEL_ID}
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     networks:
       - arth360-network
+    restart: unless-stopped
 
   research:
     build: ./research-service
+    container_name: arth360-research
+    restart: unless-stopped
     depends_on:
-      - mysql
+      mysql:
+        condition: service_healthy
     environment:
       - DB_HOST=mysql
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
+      - LMSTUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
     networks:
       - arth360-network
 
@@ -80,4 +94,4 @@ networks:
     driver: bridge
 
 volumes:
-  mysql_data: 
+  mysql_data:

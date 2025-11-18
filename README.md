@@ -2,54 +2,6 @@
 
 [![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
 
-A news aggregation system that collects, processes, summarises and publishes news articles to a Telegram channel.
-
-## Architecture
-
-The system consists of several microservices working together to deliver news content:
-
-### Core Services
-
-1. **Feeder Service**
-   - Collects news articles from various RSS feeds
-   - Stores basic article metadata in the database
-   - Runs continuously, checking for new articles
-
-2. **Content Service**
-   - Processes articles from the feeder service
-   - Extracts full content, images, and metadata
-   - Generates article summaries
-   - Stores processed content in the database
-
-3. **Publisher Service**
-   - Publishes processed articles to Telegram
-   - Tracks published articles to avoid duplicates
-   - Runs continuously, checking for new content to publish
-
-4. **Stocks Service** (On-Demand)
-   - Processes stock market data
-   - Runs only when triggered manually
-   - Uses the same database as other services
-
-### Database Structure
-
-The system uses MySQL with three main tables:
-- `feed_metadata`: Stores basic article information
-- `article_content`: Contains processed article content
-- `telegram_published`: Tracks published articles
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-- Docker and Docker Compose
-- Git
-
-### Installing Docker
-
-# Arth360.Live
-
-[![Join Telegram Channel](https://img.shields.io/badge/Join%20Telegram-Arth360-blue)](https://t.me/artha360)
-
 Arth360 is a small microservice-based news aggregation system that collects, processes, summarises and publishes news articles (and optional stock data) to a Telegram channel.
 
 ## Overview

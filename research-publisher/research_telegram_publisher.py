@@ -195,40 +195,53 @@ class ResearchBriefPublisher:
             return "Neutral", "⚪"
 
     def format_news_summary(self, news_summary):
-        """Format news articles section"""
+        """Format news articles section with full AI analysis"""
         if not news_summary:
             return ""
 
-        lines = ["📰 <b>Recent News</b>"]
+        lines = ["📰 <b>Recent News & Analysis</b>"]
 
         for idx, article in enumerate(news_summary[:3], 1):  # Top 3 articles
-            title = html.escape(article.get('title', 'Untitled')[:80])
+            title = html.escape(article.get('title', 'Untitled')[:100])
             ai_analysis = article.get('ai_analysis', '')
             sentiment, emoji = self.extract_sentiment(ai_analysis)
 
             lines.append(f"\n{emoji} <b>{idx}. {title}</b>")
 
-            # Extract key points from AI analysis
+            # Format full AI analysis
             if ai_analysis:
-                # Try to extract bullet points or key information
-                analysis_lines = [l.strip() for l in ai_analysis.split('\n') if l.strip()]
-                key_points = []
+                # Clean up the analysis text
+                analysis_text = ai_analysis.strip()
 
+                # Remove redundant headers
+                analysis_text = analysis_text.replace('Key Points:', '').replace('key points:', '')
+                analysis_text = analysis_text.replace('Financial Impact:', '\n💰 Financial Impact:')
+                analysis_text = analysis_text.replace('financial impact:', '\n💰 Financial Impact:')
+
+                # Split into lines and format
+                analysis_lines = [l.strip() for l in analysis_text.split('\n') if l.strip()]
+
+                formatted_lines = []
                 for line in analysis_lines:
-                    if line.startswith('•') or line.startswith('-') or line.startswith('Key Points'):
-                        continue
+                    # Skip sentiment line (already shown as emoji)
                     if 'sentiment:' in line.lower():
                         continue
-                    if line and len(line) > 10:
-                        key_points.append(line)
 
-                # Add first 2 key points
-                for point in key_points[:2]:
-                    lines.append(f"   • {html.escape(point[:100])}")
+                    # Format bullet points
+                    if line.startswith('•') or line.startswith('-'):
+                        formatted_lines.append(f"   {line}")
+                    elif line.startswith('1.') or line.startswith('2.') or line.startswith('3.'):
+                        formatted_lines.append(f"   • {line[2:].strip()}")
+                    elif '💰' in line or 'Financial Impact' in line:
+                        formatted_lines.append(f"\n{line}")
+                    else:
+                        # Regular text lines
+                        if len(line) > 10:  # Filter out very short lines
+                            formatted_lines.append(f"   {line}")
 
-            # Add link
-            if article.get('link'):
-                lines.append(f"   <a href='{article['link']}'>Read more</a>")
+                # Add all formatted lines
+                for line in formatted_lines:
+                    lines.append(html.escape(line))
 
         return "\n".join(lines)
 

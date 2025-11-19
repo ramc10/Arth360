@@ -86,6 +86,7 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
       - LMSTUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
+      - ALPHA_VANTAGE_API_KEY=W1WA94R8CKU8TZ1R
     networks:
       - arth360-network
 

@@ -7,6 +7,7 @@ import time
 import sys
 from dotenv import load_dotenv
 from collections import defaultdict
+from alpha_vantage_client import AlphaVantageClient
 
 # Load environment variables
 load_dotenv() 
@@ -25,12 +26,9 @@ class ResearchBriefGenerator:
             'database': os.getenv('DB_NAME', 'rss_reader')
         }
         self.lmstudio_url = os.getenv('LMSTUDIO_URL', 'http://host.docker.internal:1234/v1/chat/completions')
-        # Rate limiting for Yahoo Finance (last request time per symbol)
-        self.last_stock_request = {}
-        self.min_request_interval = 3  # seconds between requests
-        # Cache for stock data (symbol: (data, timestamp))
-        self.stock_cache = {}
-        self.cache_duration = 300  # 5 minutes cache
+
+        # Initialize Alpha Vantage client for stock data
+        self.alpha_vantage = AlphaVantageClient()
     
     def get_db_connection(self):
         return mysql.connector.connect(**self.db_config)
@@ -92,93 +90,19 @@ Be concise."""
         return articles
     
     def get_stock_data(self, symbol):
-        """Get basic stock data from yfinance with rate limiting and retry"""
-        # Check cache first
-        if symbol in self.stock_cache:
-            cached_data, cached_time = self.stock_cache[symbol]
-            if time.time() - cached_time < self.cache_duration:
-                print(f"  Using cached data for {symbol} (age: {int(time.time() - cached_time)}s)")
-                return cached_data
+        """Get stock data from Alpha Vantage API"""
+        print(f"Fetching stock data for {symbol}...")
+        stock_data = self.alpha_vantage.get_stock_data(symbol)
 
-        # Rate limiting - wait if needed
-        if symbol in self.last_stock_request:
-            time_since_last = time.time() - self.last_stock_request[symbol]
-            if time_since_last < self.min_request_interval:
-                wait_time = self.min_request_interval - time_since_last
-                print(f"  Rate limiting: waiting {wait_time:.1f}s for {symbol}")
-                time.sleep(wait_time)
+        # Log result
+        if 'error' in stock_data:
+            print(f"  ✗ Error: {stock_data['error']}")
+        elif stock_data.get('price'):
+            print(f"  Current Price: ${stock_data['price']:.2f}")
+            if stock_data.get('change_percent'):
+                print(f"  Change: {stock_data['change_percent']:+.2f}%")
 
-        # Try with retry logic (up to 3 attempts)
-        max_retries = 3
-        for attempt in range(max_retries):
-            try:
-                import yfinance as yf
-
-                # Update last request time
-                self.last_stock_request[symbol] = time.time()
-
-                # Use session with user agent to avoid blocks
-                import requests
-                session = requests.Session()
-                session.headers.update({
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                })
-
-                ticker = yf.Ticker(symbol, session=session)
-                info = ticker.info
-                hist = ticker.history(period="1d")
-
-                if not hist.empty:
-                    current_price = hist['Close'].iloc[-1]
-                    open_price = hist['Open'].iloc[-1]
-                    change_pct = ((current_price / open_price) - 1) * 100
-                    volume = hist['Volume'].iloc[-1]
-                else:
-                    current_price = None
-                    change_pct = None
-                    volume = None
-
-                stock_data = {
-                    'symbol': symbol,
-                    'price': float(current_price) if current_price else None,
-                    'change_percent': float(change_pct) if change_pct else None,
-                    'volume': int(volume) if volume else None,
-                    'market_cap': info.get('marketCap'),
-                    'pe_ratio': info.get('trailingPE'),
-                    'fifty_two_week_high': info.get('fiftyTwoWeekHigh'),
-                    'fifty_two_week_low': info.get('fiftyTwoWeekLow')
-                }
-
-                # Cache successful response
-                self.stock_cache[symbol] = (stock_data, time.time())
-
-                return stock_data
-
-            except requests.exceptions.HTTPError as e:
-                if '429' in str(e):
-                    # Rate limited - exponential backoff
-                    wait_time = (2 ** attempt) * 5  # 5s, 10s, 20s
-                    print(f"  Rate limited (429) on attempt {attempt+1}/{max_retries}")
-                    if attempt < max_retries - 1:
-                        print(f"  Waiting {wait_time}s before retry...")
-                        time.sleep(wait_time)
-                    else:
-                        print(f"  Max retries reached, returning error")
-                        return {
-                            'symbol': symbol,
-                            'error': 'Rate limited by Yahoo Finance (429). Try again later.'
-                        }
-                else:
-                    raise
-            except Exception as e:
-                print(f"  Stock data error for {symbol} (attempt {attempt+1}/{max_retries}): {e}")
-                if attempt < max_retries - 1:
-                    time.sleep(2 ** attempt)  # 1s, 2s exponential backoff
-                else:
-                    return {
-                        'symbol': symbol,
-                        'error': str(e)
-                    }
+        return stock_data
     
     def generate_brief(self, user_id, company_symbol):
         """Generate complete research brief"""

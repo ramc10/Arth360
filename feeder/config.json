@@ -134,48 +134,6 @@
       "last_checked": null
     },
     {
-      "name": "Moneycontrol Latest",
-      "url": "https://www.moneycontrol.com/rss/latestnews.xml",
-      "source": "moneycontrol-latest",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
-      "name": "Moneycontrol Business",
-      "url": "https://www.moneycontrol.com/rss/business.xml",
-      "source": "moneycontrol-business",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
-      "name": "Moneycontrol Markets",
-      "url": "https://www.moneycontrol.com/rss/marketreports.xml",
-      "source": "moneycontrol-markets",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
-      "name": "Moneycontrol Technology",
-      "url": "https://www.moneycontrol.com/rss/technology.xml",
-      "source": "moneycontrol-tech",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
-      "name": "Moneycontrol IPO",
-      "url": "https://www.moneycontrol.com/rss/iponews.xml",
-      "source": "moneycontrol-ipo",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
-      "name": "Moneycontrol Economy",
-      "url": "https://www.moneycontrol.com/rss/economy.xml",
-      "source": "moneycontrol-economy",
-      "headers": {"User-Agent": "Mozilla/5.0"},
-      "last_checked": null
-    },
-    {
       "name": "Economic Times Markets",
       "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
       "source": "et-markets",

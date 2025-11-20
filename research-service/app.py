@@ -272,10 +272,29 @@ def main():
                 print(f"✗ Errors:  {error_count}", flush=True)
                 print(f"Total:    {len(watchlist_items)}", flush=True)
             
-            # Wait 1 hour before next cycle
-            print(f"\nNext run in 1 hour at {(datetime.now() + timedelta(hours=1)).strftime('%H:%M:%S')}\n", flush=True)
+            # Run twice daily: morning (8 AM) and evening (8 PM)
+            # Calculate next run time
+            now = datetime.now()
+
+            # Define run times (hours in 24h format)
+            run_hours = [8, 20]  # 8 AM and 8 PM
+
+            # Find next run time
+            next_run = None
+            for hour in run_hours:
+                next_time = now.replace(hour=hour, minute=0, second=0, microsecond=0)
+                if next_time > now:
+                    next_run = next_time
+                    break
+
+            # If no run time today, schedule for tomorrow morning
+            if next_run is None:
+                next_run = (now + timedelta(days=1)).replace(hour=run_hours[0], minute=0, second=0, microsecond=0)
+
+            wait_seconds = (next_run - now).total_seconds()
+            print(f"\nNext run at {next_run.strftime('%Y-%m-%d %H:%M:%S')} ({wait_seconds/3600:.1f} hours)\n", flush=True)
             sys.stdout.flush()
-            time.sleep(3600)  # 1 hour
+            time.sleep(wait_seconds)
             
         except KeyboardInterrupt:
             print("\n\nShutting down...", flush=True)

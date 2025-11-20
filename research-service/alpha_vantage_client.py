@@ -84,6 +84,13 @@ class AlphaVantageClient:
                     'error': 'Rate limit reached. Please wait.'
                 }
 
+            if 'Information' in data:
+                # Daily rate limit message
+                return {
+                    'symbol': symbol,
+                    'error': 'Daily API rate limit reached (25 requests/day)'
+                }
+
             if 'Global Quote' not in data or not data['Global Quote']:
                 return {
                     'symbol': symbol,
@@ -165,6 +172,9 @@ class AlphaVantageClient:
             if 'Note' in data:
                 return None  # Rate limited
 
+            if 'Information' in data:
+                return None  # Daily rate limit reached
+
             overview = {
                 'market_cap': int(float(data.get('MarketCapitalization', 0))) if data.get('MarketCapitalization') else None,
                 'pe_ratio': float(data.get('PERatio', 0)) if data.get('PERatio') and data.get('PERatio') != 'None' else None,
@@ -186,9 +196,10 @@ class AlphaVantageClient:
 
     def get_stock_data(self, symbol):
         """
-        Get complete stock data (quote + overview)
+        Get complete stock data (quote + overview with caching)
 
         This is the main method used by research service
+        Fetches quote and overview, but caches overview for 24h to optimize API usage
 
         Args:
             symbol: Stock ticker
@@ -198,14 +209,14 @@ class AlphaVantageClient:
         """
         print(f"  Fetching {symbol} from Alpha Vantage...")
 
-        # Get real-time quote
+        # Get real-time quote (1 API call)
         quote_data = self.get_quote(symbol)
 
         if 'error' in quote_data:
             return quote_data
 
         # Get company overview (fundamentals)
-        # Only fetch if not cached (to save API calls)
+        # This will use cache if available (24h TTL), only 1 API call per day per symbol
         overview = self.get_company_overview(symbol)
 
         # Combine quote and overview data

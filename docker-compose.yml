@@ -109,9 +109,67 @@ services:
       - arth360-network
     restart: unless-stopped
 
+  ai-news-aggregator:
+    build:
+      context: .
+      dockerfile: ai-news-aggregator/Dockerfile
+    container_name: arth360-ai-aggregator
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - REDDIT_CLIENT_ID=${REDDIT_CLIENT_ID}
+      - REDDIT_CLIENT_SECRET=${REDDIT_CLIENT_SECRET}
+      - REDDIT_USER_AGENT=AI Newsletter Aggregator v1.0
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - arth360-network
+    restart: unless-stopped
+
+  newsletter-generator:
+    build:
+      context: .
+      dockerfile: newsletter-generator/Dockerfile
+    container_name: arth360-newsletter-generator
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - LMSTUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - arth360-network
+    restart: unless-stopped
+
+  newsletter-publisher:
+    build:
+      context: .
+      dockerfile: newsletter-publisher/Dockerfile
+    container_name: arth360-newsletter-publisher
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - arth360-network
+    volumes:
+      - newsletter_pdfs:/app/output
+    restart: unless-stopped
+
 networks:
   arth360-network:
     driver: bridge
 
 volumes:
   mysql_data:
+  newsletter_pdfs:

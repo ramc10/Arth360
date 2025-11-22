@@ -48,6 +48,7 @@ class ArticleExtractor:
         self.create_tables()
         self.last_request_time = defaultdict(float)  # Track last request per domain
         self.failed_urls = set()  # Track permanently failed URLs
+        self.lmstudio_url = os.getenv('LMSTUDIO_URL', 'http://host.docker.internal:1234/v1/chat/completions')
 
     def setup_logger(self):
         """Setup logger with date-based file rotation"""
@@ -208,6 +209,42 @@ class ArticleExtractor:
 
         self.last_request_time[domain] = time.time()
 
+    def summarize_with_llama(self, text, title=""):
+        """Use local Llama to summarize article content"""
+        # Truncate text if too long (LLM context limit)
+        max_chars = 3000
+        text_snippet = text[:max_chars] if len(text) > max_chars else text
+
+        prompt = f"""Summarize this article in 2-3 concise sentences. Focus on the key information and main points.
+
+Title: {title}
+
+Article:
+{text_snippet}
+
+Summary:"""
+
+        try:
+            response = requests.post(self.lmstudio_url, json={
+                "model": "llama-3.1-8b",
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.3,
+                "max_tokens": 200
+            }, timeout=30)
+
+            if response.status_code == 200:
+                summary = response.json()['choices'][0]['message']['content'].strip()
+                self.log(f"✓ Generated LLM summary ({len(summary)} chars)")
+                return summary
+            else:
+                self.log(f"LLM API error: {response.status_code}", 'warning')
+                # Fallback to simple truncation
+                return text[:500] + "..." if len(text) > 500 else text
+        except Exception as e:
+            self.log(f"LLM summarization failed: {str(e)}", 'warning')
+            # Fallback to simple truncation
+            return text[:500] + "..." if len(text) > 500 else text
+
     def extract_with_newspaper(self, url):
         """Extract article content using newspaper3k library"""
         try:
@@ -217,12 +254,15 @@ class ArticleExtractor:
 
             article.download()
             article.parse()
-            article.nlp()  # Perform NLP processing
+            article.nlp()  # Still run NLP for keywords extraction
 
             # Process and store images
             images = []
             if article.images:
                 images = [img for img in article.images if img.startswith(('http://', 'https://'))]
+
+            # Use LLM for summarization instead of newspaper3k's built-in summary
+            llm_summary = self.summarize_with_llama(article.text, article.title)
 
             return {
                 'full_text': article.text,
@@ -231,7 +271,7 @@ class ArticleExtractor:
                 'top_image': article.top_image if article.top_image else None,
                 'images': images[:5],  # Store up to 5 images
                 'keywords': article.keywords[:10] if article.keywords else [],  # Top 10 keywords
-                'summary': article.summary
+                'summary': llm_summary  # Using LLM-generated summary
             }
         except Exception as e:
             raise Exception(f"newspaper3k failed: {str(e)}")
@@ -288,12 +328,11 @@ class ArticleExtractor:
                     base_url = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
                     images.append(base_url + img_url)
 
-            # Generate simple summary (first 3 paragraphs)
-            summary_paragraphs = [p.get_text().strip() for p in paragraphs[:3] if p.get_text().strip()]
-            summary = '\n'.join(summary_paragraphs)
-
             if not text_content or len(text_content) < 100:
                 raise Exception("Insufficient content extracted")
+
+            # Use LLM for summarization instead of simple first-3-paragraphs approach
+            llm_summary = self.summarize_with_llama(text_content, title_text)
 
             return {
                 'full_text': text_content,
@@ -302,7 +341,7 @@ class ArticleExtractor:
                 'top_image': images[0] if images else None,
                 'images': images[:5],
                 'keywords': [],
-                'summary': summary[:500] if summary else text_content[:500]
+                'summary': llm_summary  # Using LLM-generated summary
             }
 
         except Exception as e:

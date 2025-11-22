@@ -47,6 +47,7 @@ services:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
+      - LMSTUDIO_URL=http://host.docker.internal:1234/v1/chat/completions
     depends_on:
       mysql:
         condition: service_healthy
